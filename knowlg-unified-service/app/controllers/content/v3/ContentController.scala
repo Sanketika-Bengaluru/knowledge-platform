@@ -23,7 +23,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def create() = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "createContent", true)
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -64,7 +64,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def update(identifier: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "updateContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -95,7 +95,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def updateHierarchy() = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val data = body.getOrDefault("data", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val data = body.getOrElse("data", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         data.putAll(headers)
         val contentRequest = getRequest(data, headers, "updateHierarchy")
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -159,7 +159,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def publish(identifier: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "publishContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -171,7 +171,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def publishUnlisted(identifier: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "publishContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -183,7 +183,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def review(identifier: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]];
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "reviewContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -203,7 +203,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def retire(identifier: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         content.put("identifier", identifier)
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "retireContent")
@@ -258,7 +258,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "uploadContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
-        contentRequest.getContext.putAll(Map("identifier" ->  identifier, "params" -> UploadParams(fileFormat, validation.map(_.toBoolean))).asJava)
+        contentRequest.getContext.putAll(Map("identifier" ->  identifier, "params" -> UploadParams(fileFormat, validation.asScala.map(_.toBoolean))).asJava)
         getResult(ApiId.UPLOAD_CONTENT, contentActor, contentRequest)
     }
 
@@ -266,7 +266,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def copy(identifier: String, mode: Option[String], copyType: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         content.putAll(headers)
         content.putAll(Map("identifier" -> identifier, "mode" -> mode.getOrElse(""), "copyType" -> copyType).asJava)
         val contentRequest = getRequest(content, headers, "copy")
@@ -277,7 +277,7 @@ class ContentController @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor:
     def uploadPreSigned(identifier: String, `type`: Option[String])= Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val content = body.getOrElse("content", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         content.putAll(headers)
         content.putAll(Map("identifier" -> identifier, "type" -> `type`.getOrElse("assets")).asJava)
         val contentRequest = getRequest(content, headers, "uploadPreSignedUrl")

@@ -30,7 +30,7 @@ object JavaJsonUtils {
         // $COVERAGE-OFF$Disabling scoverage as this code is impossible to test
         else new ParameterizedType {
             def getRawType = m.runtimeClass
-            def getActualTypeArguments = m.typeArguments.map(typeFromManifest).toArray
+            def getActualTypeArguments = m.typeArguments.asScala.map(typeFromManifest).toArray
             def getOwnerType = null
         }
         // $COVERAGE-ON$

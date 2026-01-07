@@ -3,6 +3,7 @@ TAG=$1
 docker rmi $(docker images -a | grep taxonomy-service | awk '{print $1":"$2}')
 docker rmi $(docker images -a | grep content-service | awk '{print $1":"$2}')
 docker rmi $(docker images -a | grep search-service | awk '{print $1":"$2}')
+docker rmi $(docker images -a | grep knowlg-unified-service | awk '{print $1":"$2}')
 
 # Taxonomy Service
 cd taxonomy-api/taxonomy-service
@@ -21,3 +22,9 @@ cd search-api/search-service
 mvn play2:dist
 cd ../..
 docker build -f build/search-service/Dockerfile -t search-service:${TAG} .
+
+# Unified Service (New)
+cd knowlg-unified-service
+mvn play2:dist
+cd ..
+docker build -f build/knowlg-unified-service/Dockerfile -t knowlg-unified-service:${TAG} .

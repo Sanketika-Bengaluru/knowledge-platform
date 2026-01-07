@@ -229,11 +229,6 @@
             <artifactId>scala-library</artifactId>
             <version>${scala.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.scala-lang.modules</groupId>
-            <artifactId>scala-java8-compat_${scala.major.version}</artifactId>
-            <version>1.0.2</version>
-        </dependency>
         
         <!-- Logging -->
         <dependency>
@@ -310,8 +305,7 @@
                 </exclusion>
             </exclusions>
         </dependency>
-        
-        <!-- Assessment functionality will be compiled inline -->
+
         
         <!-- Cloud Storage SDK -->
         <dependency>

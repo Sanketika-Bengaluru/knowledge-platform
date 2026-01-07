@@ -30,7 +30,7 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
 
     def requestBody()(implicit request: Request[AnyContent]) = {
         val body = request.body.asJson.getOrElse("{}").toString
-        JavaJsonUtils.deserialize[java.util.Map[String, Object]](body).getOrDefault("request", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        JavaJsonUtils.deserialize[java.util.Map[String, Object]](body).getOrElse("request", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
     }
 
     def requestFormData(identifier: String)(implicit request: Request[AnyContent]) = {
@@ -38,12 +38,12 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
         if(!request.body.asMultipartFormData.isEmpty) {
             val multipartData = request.body.asMultipartFormData.get
             if (null != multipartData.asFormUrlEncoded && !multipartData.asFormUrlEncoded.isEmpty) {
-                if(multipartData.asFormUrlEncoded.getOrElse("fileUrl",Seq()).length > 0){
+                if(multipartData.asFormUrlEncoded.getOrElse("fileUrl",Seq()).size > 0){
                     val fileUrl: String = multipartData.asFormUrlEncoded.getOrElse("fileUrl",Seq()).head
                     if (StringUtils.isNotBlank(fileUrl))
                         reqMap.put("fileUrl", fileUrl)
                 }
-                if(multipartData.asFormUrlEncoded.getOrElse("filePath",Seq()).length > 0){
+                if(multipartData.asFormUrlEncoded.getOrElse("filePath",Seq()).size > 0){
                     val filePath: String = multipartData.asFormUrlEncoded.getOrElse("filePath",Seq()).head
                     if (StringUtils.isNotBlank(filePath))
                         reqMap.put("filePath", filePath)
@@ -55,7 +55,7 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
                 reqMap.put("file", copiedFile)
             }
         }
-        if(StringUtils.isNotBlank(reqMap.getOrDefault("fileUrl", "").asInstanceOf[String]) || null != reqMap.get("file").asInstanceOf[File]){
+        if(StringUtils.isNotBlank(reqMap.getOrElse("fileUrl", "").asInstanceOf[String]) || null != reqMap.get("file").asInstanceOf[File]){
             reqMap
         } else {
             throw new ClientException("ERR_INVALID_DATA", "Please Provide Valid File Or File Url!")
@@ -63,8 +63,8 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
     }
 
     def commonHeaders(ignoreHeaders: Option[List[String]] = Option(List()))(implicit request: Request[AnyContent]): java.util.Map[String, Object] = {
-        val customHeaders = Map("x-channel-id" -> "channel", "X-Consumer-ID" -> "consumerId", "X-App-Id" -> "appId").view.filterKeys(key => !ignoreHeaders.getOrElse(List()).contains(key)).toMap
-        customHeaders.map(ch => {
+        val customHeaders = Map("x-channel-id" -> "channel", "X-Consumer-ID" -> "consumerId", "X-App-Id" -> "appId").view.filterKeys(key => !ignoreHeaders.getOrElse(List()).containsKey(key)).toMap
+        customHeaders.asScala.map(ch => {
             val value = request.headers.get(ch._1)
             if (value.isDefined && !value.isEmpty) {
                 collection.mutable.HashMap[String, Object](ch._2 -> value.get).asJava
@@ -85,16 +85,16 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
 
     def getResult(apiId: String, actor: ActorRef, request: org.sunbird.common.dto.Request, categoryMapping: Boolean = false, version: String = "3.0") : Future[Result] = {
         val future = Patterns.ask(actor, request, actorTimeout) recoverWith {case e: Exception => Future(ResponseHandler.getErrorResponse(e))}
-        future.map(f => {
+        future.asScala.map(f => {
             val result: Response = f.asInstanceOf[Response]
             result.setId(apiId)
             result.setVer(version)
             setResponseEnvelope(result)
             //TODO Mapping for backward compatibility
             if (categoryMapping && result.getResponseCode == ResponseCode.OK) {
-                setContentAndCategoryTypes(result.getResult.getOrDefault("content", new util.HashMap[String, AnyRef]()).asInstanceOf[util.Map[String, AnyRef]])
-                val objectType = result.getResult.getOrDefault("content", new util.HashMap[String, AnyRef]()).asInstanceOf[util.Map[String, AnyRef]].getOrDefault("objectType", "Content").asInstanceOf[String]
-                setObjectTypeForRead(objectType, result.getResult.getOrDefault("content", new util.HashMap[String, AnyRef]()).asInstanceOf[util.Map[String, AnyRef]])
+                setContentAndCategoryTypes(result.getResult.getOrElse("content", new util.HashMap[String, AnyRef]()).asInstanceOf[util.Map[String, AnyRef]])
+                val objectType = result.getResult.getOrElse("content", new util.HashMap[String, AnyRef]()).asInstanceOf[util.Map[String, AnyRef]].getOrElse("objectType", "Content").asInstanceOf[String]
+                setObjectTypeForRead(objectType, result.getResult.getOrElse("content", new util.HashMap[String, AnyRef]()).asInstanceOf[util.Map[String, AnyRef]])
             }
             val response: String = JavaJsonUtils.serialize(result);
             result.getResponseCode match {
@@ -148,7 +148,7 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
                 }
             }
         }
-        if(StringUtils.isNotBlank(request.getContext.getOrDefault("channel", "").asInstanceOf[String]))
+        if(StringUtils.isNotBlank(request.getContext.getOrElse("channel", "").asInstanceOf[String]))
             contextMap.put("channel", request.getContext.get("channel").asInstanceOf[String])
         request.setContext(contextMap)
     }
@@ -158,8 +158,8 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
         val primaryCategory = input.get("primaryCategory").asInstanceOf[String]
             val (updatedContentType, updatedPrimaryCategory): (String, String) = (contentType, primaryCategory) match {
                 case (x: String, y: String) => (x, y)
-                case ("Resource", y) => (contentType, getCategoryForResource(input.getOrDefault("mimeType", "").asInstanceOf[String],
-                    input.getOrDefault("resourceType", "").asInstanceOf[String]))
+                case ("Resource", y) => (contentType, getCategoryForResource(input.getOrElse("mimeType", "").asInstanceOf[String],
+                    input.getOrElse("resourceType", "").asInstanceOf[String]))
                 case (x: String, y) => (x, getPrimaryCategory(x))
                 case (x, y: String) => (getContentType(y), y)
                 case _ => (contentType, primaryCategory)
@@ -178,8 +178,8 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
     }
 
     private def getContentType(primaryCategory: String): String ={
-        categoryMap.asScala.filter(entry => (entry._2 match{
-            case xs: util.List[_] => xs.asInstanceOf[util.List[String]].contains(primaryCategory)
+        categoryMap.asScala.asScala.filter(entry => (entry._2 match{
+            case xs: util.List[_] => xs.asInstanceOf[util.List[String]].containsKey(primaryCategory)
             case _ => StringUtils.equalsIgnoreCase(entry._2.asInstanceOf[String], primaryCategory)
 
         })).keys.headOption.getOrElse("Resource")
@@ -188,7 +188,7 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
     private def getCategoryForResource(mimeType: String, resourceType: String): String = (mimeType, resourceType) match {
         case ("", "") => "Learning Resource"
         case (x: String, "") => categoryMapForMimeType.get(x).asInstanceOf[util.List[String]].asScala.headOption.getOrElse("Learning Resource")
-        case (x: String, y: String) => if (mimeTypesToCheck.contains(x)) categoryMapForMimeType.get(x).asInstanceOf[util.List[String]].asScala.headOption.getOrElse("Learning Resource") else categoryMapForResourceType.getOrDefault(y, "Learning Resource").asInstanceOf[String]
+        case (x: String, y: String) => if (mimeTypesToCheck.containsKey(x)) categoryMapForMimeType.get(x).asInstanceOf[util.List[String]].asScala.headOption.getOrElse("Learning Resource") else categoryMapForResourceType.getOrElse(y, "Learning Resource").asInstanceOf[String]
         case _ => "Learning Resource"
     }
 
@@ -196,9 +196,9 @@ abstract class BaseController(protected val cc: ControllerComponents)(implicit e
         result.put("objectType", "Content")
     }
 
-    def validatePrimaryCategory(input: java.util.Map[String, AnyRef]): Boolean = StringUtils.isNotBlank(input.getOrDefault("primaryCategory", "").asInstanceOf[String])
+    def validatePrimaryCategory(input: java.util.Map[String, AnyRef]): Boolean = StringUtils.isNotBlank(input.getOrElse("primaryCategory", "").asInstanceOf[String])
 
-    def validateContentType(input: java.util.Map[String, AnyRef]): Boolean = StringUtils.isNotBlank(input.getOrDefault("contentType", "").asInstanceOf[String])
+    def validateContentType(input: java.util.Map[String, AnyRef]): Boolean = StringUtils.isNotBlank(input.getOrElse("contentType", "").asInstanceOf[String])
 
 
     def getErrorResponse(apiId: String, version: String, errCode: String, errMessage: String): Future[Result] = {

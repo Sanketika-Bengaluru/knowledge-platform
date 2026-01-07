@@ -26,11 +26,11 @@ class SearchController @Inject()(@Named(ActorNames.SEARCH_ACTOR) searchActor: Ac
     def search() = loggingAction.async { implicit request =>
         val internalReq = getRequest(ApiId.APPLICATION_SEARCH)
         setHeaderContext(internalReq)
-        val filters = internalReq.getRequest.getOrDefault(SearchConstants.filters, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val filters = internalReq.getRequest.getOrElse(SearchConstants.filters, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         val visibilityReq = filters.getOrDefault("visibility", new util.ArrayList[String]())
         val visibility: List[String] = visibilityReq match {
-            case visibilityReq: util.List[_] => visibilityReq.asInstanceOf[util.List[String]].asScala.toList.map(x => if (StringUtils.isNotBlank(x)) x.toLowerCase).asInstanceOf[List[String]]
-            case visibilityReq: String => List(visibilityReq).map(x => if (StringUtils.isNotBlank(x)) x.toLowerCase).asInstanceOf[List[String]]
+            case visibilityReq: util.List[_] => visibilityReq.asInstanceOf[util.List[String]].asScala.asScala.toList.asScala.map(x => if (StringUtils.isNotBlank(x)) x.toLowerCase).asInstanceOf[List[String]]
+            case visibilityReq: String => List(visibilityReq).asScala.map(x => if (StringUtils.isNotBlank(x)) x.toLowerCase).asInstanceOf[List[String]]
             case _ => List()
         }
 
@@ -47,11 +47,11 @@ class SearchController @Inject()(@Named(ActorNames.SEARCH_ACTOR) searchActor: Ac
     def privateSearch() = loggingAction.async { implicit request =>
         val internalReq = getRequest(ApiId.APPLICATION_PRIVATE_SEARCH)
         setHeaderContext(internalReq)
-        val channel = internalReq.getContext.getOrDefault("CHANNEL_ID", "").asInstanceOf[String]
+        val channel = internalReq.getContext.getOrElse("CHANNEL_ID", "").asInstanceOf[String]
         if(channel.isBlank) {
             getErrorResponse(ApiId.APPLICATION_PRIVATE_SEARCH, apiVersion, SearchConstants.ERR_INVALID_CHANNEL, "Please provide channel!")
         } else {
-            val filters = internalReq.getRequest.getOrDefault(SearchConstants.filters,"").asInstanceOf[java.util.Map[String, Object]]
+            val filters = internalReq.getRequest.getOrElse(SearchConstants.filters,"").asInstanceOf[java.util.Map[String, Object]]
             filters.putAll(Map("channel" -> channel).asJava)
             internalReq.getContext.put(SearchConstants.filters, filters)
             internalReq.getContext.put(SearchConstants.setDefaultVisibility, "false")

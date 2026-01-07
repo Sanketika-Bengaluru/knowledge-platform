@@ -19,8 +19,8 @@ object ActorNames {
     final val COLLECTION_CSV_ACTOR = "collectionCSVActor"
     
     // Search Service Actors
-    final val SEARCH_ACTOR = "SearchActor"
-    final val AUDIT_HISTORY_ACTOR = "AuditHistoryActor"
+    final val SEARCH_ACTOR = "searchActor"
+    final val AUDIT_HISTORY_ACTOR = "auditHistoryActor"
     
     // Taxonomy Service Actors
     final val OBJECT_CATEGORY_ACTOR = "objectCategoryActor"
@@ -30,5 +30,13 @@ object ActorNames {
     final val CATEGORY_INSTANCE_ACTOR = "categoryInstanceActor"
     final val TERM_ACTOR = "termActor"
     final val LOCK_ACTOR = "lockActor"
+    
+    // Assessment Service Actors
+    final val ITEM_SET_ACTOR = "itemSetActor"
+    final val ASSESSMENT_ITEM_ACTOR = "assessmentItemActor"
+    final val QUESTION_ACTOR = "questionActor"
+    final val QUESTION_SET_ACTOR = "questionSetActor"
+    final val QUESTION_V5_ACTOR = "questionV5Actor"
+    final val QUESTION_SET_V5_ACTOR = "questionSetV5Actor"
 
 }

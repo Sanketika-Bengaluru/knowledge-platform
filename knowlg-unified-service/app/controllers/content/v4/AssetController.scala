@@ -34,7 +34,7 @@ class AssetController  @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor: 
     def create() = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val content = body.getOrElse(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         content.putAll(headers)
         if(!validatePrimaryCategory(content))
             getErrorResponse(ApiId.CREATE_ASSET, apiVersion, "VALIDATION_ERROR", "primaryCategory is a mandatory parameter.")
@@ -71,7 +71,7 @@ class AssetController  @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor: 
     def update(identifier: String) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val content = body.getOrElse(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "updateContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
@@ -85,14 +85,14 @@ class AssetController  @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor: 
         content.putAll(headers)
         val contentRequest = getRequest(content, headers, "uploadContent")
         setRequestContext(contentRequest, version, objectType, schemaName)
-        contentRequest.getContext.putAll(Map("identifier" ->  identifier, "params" -> UploadParams(fileFormat, validation.map(_.toBoolean))).asJava)
+        contentRequest.getContext.putAll(Map("identifier" ->  identifier, "params" -> UploadParams(fileFormat, validation.asScala.map(_.toBoolean))).asJava)
         getResult(ApiId.UPLOAD_ASSET, contentActor, contentRequest, version = apiVersion)
     }
 
     def uploadPreSigned(identifier: String, `type`: Option[String])= Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val content = body.getOrDefault(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val content = body.getOrElse(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         content.putAll(headers)
         content.putAll(Map("identifier" -> identifier, "type" -> `type`.getOrElse("assets")).asJava)
         val contentRequest = getRequest(content, headers, "uploadPreSignedUrl")
@@ -114,7 +114,7 @@ class AssetController  @Inject()(@Named(ActorNames.CONTENT_ACTOR) contentActor: 
     def licenceValidate(field: Option[String]) = Action.async { implicit request =>
         val headers = commonHeaders()
         val body = requestBody()
-        val asset = body.getOrDefault("asset", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        val asset = body.getOrElse("asset", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
         asset.putAll(headers)
         asset.putAll(Map("field" -> field.getOrElse("")).asJava)
         val assetRequest = getRequest(asset, headers, "validateLicense")

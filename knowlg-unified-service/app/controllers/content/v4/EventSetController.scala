@@ -53,7 +53,7 @@ class EventSetController @Inject()(@Named(ActorNames.EVENT_SET_ACTOR) eventSetAc
     val headers = commonHeaders()
     val body = requestBody()
     val content = body.getOrDefault(schemaName, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
-    if (content.containsKey("status")) {
+    if (content.contains("status")) {
       getErrorResponse(ApiId.UPDATE_EVENT_SET, apiVersion, "VALIDATION_ERROR", "status update is restricted, use status APIs.")
     } else {
       content.putAll(headers)

@@ -30,7 +30,7 @@ class AuditHistoryController @Inject()(@Named(ActorNames.AUDIT_HISTORY_ACTOR) au
     val sortBy = new util.HashMap[String, String]
     sortBy.put(AuditProperties.createdOn.name(), "desc")
     sortBy.put(AuditProperties.operation.name(), "desc")
-    val filters = internalReq.getRequest.getOrDefault(SearchConstants.filters, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+    val filters = internalReq.getRequest.getOrElse(SearchConstants.filters, new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
     filters.putAll(Map(SearchConstants.graphId -> graphId , SearchConstants.objectId -> objectId).asJava)
     internalReq.getRequest.put(SearchConstants.filters, filters)
     internalReq.getRequest.putAll(Map(SearchConstants.fields -> setSearchCriteria(apiVersion), SearchConstants.sort_by -> sortBy ).asJava)

@@ -21,7 +21,7 @@ abstract class SearchBaseController(protected val cc: ControllerComponents)(impl
     
     def requestBody()(implicit request: Request[AnyContent]) = {
         val body = request.body.asJson.getOrElse("{}").toString
-        JsonUtils.deserialize(body, classOf[java.util.Map[String, Object]]).getOrDefault("request", new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
+        Option.getOrElse(new java.util.HashMap()).asInstanceOf[java.util.Map[String, Object]]
     }
 
     def commonHeaders()(implicit request: Request[AnyContent]): java.util.Map[String, Object] = {
@@ -114,7 +114,7 @@ abstract class SearchBaseController(protected val cc: ControllerComponents)(impl
         searchRequest.setContext(new util.HashMap[String, AnyRef]())
         searchRequest.getContext.put(TelemetryParams.ENV.name, "search")
         searchRequest.getContext.putAll(commonHeaders())
-        if (StringUtils.isBlank(searchRequest.getContext.getOrDefault("CHANNEL_ID", "").asInstanceOf[String])) {
+        if (StringUtils.isBlank(Option.getOrElse("").asInstanceOf[String])) {
             searchRequest.getContext.put("CHANNEL_ID", Platform.config.getString("channel.default"))
         }
 

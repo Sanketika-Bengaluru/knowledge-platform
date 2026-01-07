@@ -15,13 +15,13 @@ object RequestUtil {
 	val questionListLimit = if (Platform.config.hasPath("question.list.limit")) Platform.config.getInt("question.list.limit") else 20
 
 	def restrictProperties(request: Request)(implicit oec: OntologyEngineContext, ec: ExecutionContext): Unit = {
-		val graphId = request.getContext.getOrDefault("graph_id","").asInstanceOf[String]
-		val version = request.getContext.getOrDefault("version","").asInstanceOf[String]
-		val objectType = request.getContext.getOrDefault("objectType", "").asInstanceOf[String]
-		val schemaName = request.getContext.getOrDefault("schemaName","").asInstanceOf[String]
+		val graphId = request.getContext.getOrElse("graph_id","").asInstanceOf[String]
+		val version = request.getContext.getOrElse("version","").asInstanceOf[String]
+		val objectType = request.getContext.getOrElse("objectType", "").asInstanceOf[String]
+		val schemaName = request.getContext.getOrElse("schemaName","").asInstanceOf[String]
 		val operation = request.getOperation.toLowerCase.replace(objectType.toLowerCase, "")
 		val restrictedProps =DefinitionNode.getRestrictedProperties(graphId, version, operation, schemaName)
-		if (restrictedProps.exists(prop => request.getRequest.containsKey(prop))) throw new ClientException("ERROR_RESTRICTED_PROP", "Properties in list " + restrictedProps.mkString("[", ", ", "]") + " are not allowed in request")
+		if (restrictedProps.exists(prop => request.getRequest.contains(prop))) throw new ClientException("ERROR_RESTRICTED_PROP", "Properties in list " + restrictedProps.mkString("[", ", ", "]") + " are not allowed in request")
 	}
 
 	def validateRequest(request: Request): Unit = {
