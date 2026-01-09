@@ -6,7 +6,7 @@ import java.util.concurrent.CompletionException
 import org.apache.commons.collections4.{CollectionUtils, MapUtils}
 import org.apache.commons.lang3.StringUtils
 import org.sunbird.common.DateUtils
-import org.sunbird.common.dto.{Request, Response}
+import org.sunbird.common.dto.{Request, Response, ResponseHandler}
 import org.sunbird.common.exception.{ClientException, ErrorCodes, ResponseCode}
 import org.sunbird.graph.OntologyEngineContext
 import scala.jdk.CollectionConverters._
@@ -135,7 +135,11 @@ object DataNode {
     private def createRelations(graphId: String, node: Node, context: util.Map[String, AnyRef])(implicit ec: ExecutionContext, oec: OntologyEngineContext) : Future[Response] = {
         val relations: util.List[Relation] = node.getAddedRelations
         if (CollectionUtils.isNotEmpty(relations)) {
-            oec.graphService.createRelation(graphId,getRelationMap(relations))
+            oec.graphService.createRelation(graphId,getRelationMap(relations)).map(_ => {
+                val response = ResponseHandler.OK()
+                response.put("relations", "created")
+                response
+            })
         } else {
             Future(new Response)
         }

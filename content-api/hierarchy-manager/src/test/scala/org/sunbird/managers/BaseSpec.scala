@@ -5,22 +5,22 @@ import com.datastax.driver.core.ResultSet
 import com.typesafe.config.ConfigFactory
 import org.apache.commons.io.FileUtils
 import org.cassandraunit.utils.EmbeddedCassandraServerHelper
-import org.neo4j.driver.v1.{Config, Driver, GraphDatabase, Session}
-import org.neo4j.graphdb.GraphDatabaseService
+import org.janusgraph.core.JanusGraph
+import org.janusgraph.core.JanusGraphFactory
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource
 import org.scalatest.flatspec.AsyncFlatSpec
 import org.scalatest.{BeforeAndAfterAll, BeforeAndAfterEach}
 import org.sunbird.cassandra.CassandraConnector
 import org.sunbird.common.Platform
-import org.testcontainers.containers.FixedHostPortGenericContainer
-import org.testcontainers.containers.wait.strategy.Wait
+import org.sunbird.graph.dac.util.JanusGraphSchemaManager
 
 import java.time.Duration
 import java.util.concurrent.TimeUnit
 
 class BaseSpec extends AsyncFlatSpec with BeforeAndAfterAll with BeforeAndAfterEach {
 
-  var driver: Driver = null
-  var graphDb: Session = _
+  var embeddedGraph: JanusGraph = _
+  var g: GraphTraversalSource = _
   var session: com.datastax.driver.core.Session = null
 
   private val script_1 = "CREATE KEYSPACE IF NOT EXISTS content_store WITH replication = {'class': 'SimpleStrategy','replication_factor': '1'};"
@@ -36,69 +36,23 @@ class BaseSpec extends AsyncFlatSpec with BeforeAndAfterAll with BeforeAndAfterE
 
   private val configFile = ConfigFactory.load()
   private val graphDirectory = configFile.getString("graph.dir")
-  val hostHttpsPort = 7473
-  val hostHttpPort = 7474
-  val hostBoltPort = 7687
-  val neo4jContainer: FixedHostPortGenericContainer[_] = new FixedHostPortGenericContainer("neo4j:3.5.0")
 
-  def setUpEmbeddedNeo4j(): Unit = {
-    if (null == graphDb) {
-      val graphDir = new File(graphDirectory)
-      if (!graphDir.exists()) {
-        graphDir.mkdirs()
-      }
-
-      neo4jContainer.withFixedExposedPort(hostHttpsPort, hostHttpsPort)
-      neo4jContainer.withFixedExposedPort(hostHttpPort, hostHttpPort)
-      neo4jContainer.withFixedExposedPort(hostBoltPort, hostBoltPort)
-      neo4jContainer.withEnv("NEO4J_dbms_directories_data", graphDirectory)
-      neo4jContainer.withEnv("NEO4J_dbms_security_auth__enabled", "false")
-      neo4jContainer.withCommand("neo4j", "console")
-      neo4jContainer.withStartupTimeout(Duration.ofSeconds(60))
-      neo4jContainer.waitingFor(Wait.forListeningPort())
-      neo4jContainer.start()
-      Thread.sleep(20000)
-
-      val httpAddress = s"http://localhost:$hostHttpPort"
-      val boltAddress = s"bolt://localhost:$hostBoltPort"
-
-      val config = Config.builder()
-        .withConnectionTimeout(30, TimeUnit.SECONDS)
-        .withMaxTransactionRetryTime(1, TimeUnit.MINUTES)
-        .build()
-
-      driver = GraphDatabase.driver(boltAddress, config)
-      graphDb = driver.session()
+  def setUpEmbeddedJanusGraph(): Unit = {
+    if (null == embeddedGraph) {
+      embeddedGraph = JanusGraphFactory.build()
+        .set("storage.backend", "inmemory")
+        .set("index.search.backend", "inmemory")
+        .open()
+      
+      JanusGraphSchemaManager.initializeGraphSchema("domain", embeddedGraph)
+      g = embeddedGraph.traversal()
     }
   }
 
-  private def registerShutdownHook(graphDb: GraphDatabaseService): Unit = {
-    Runtime.getRuntime.addShutdownHook(new Thread() {
-      override def run(): Unit = {
-        try {
-          tearEmbeddedNeo4JSetup
-        } catch {
-          case e: Exception =>
-            e.printStackTrace()
-        }
-      }
-    })
-  }
-
-
-  @throws[Exception]
-  private def tearEmbeddedNeo4JSetup(): Unit = {
-    if (null != graphDb) graphDb.close()
-    Thread.sleep(2000)
-    deleteEmbeddedNeo4j(new File(Platform.config.getString("graph.dir")))
-  }
-
-  private def deleteEmbeddedNeo4j(emDb: File): Unit = {
-    try {
-      FileUtils.deleteDirectory(emDb)
-    } catch {
-      case e: Exception =>
-        e.printStackTrace()
+  private def tearEmbeddedJanusGraphSetup(): Unit = {
+    if (null != embeddedGraph && embeddedGraph.isOpen) {
+      g.close()
+      embeddedGraph.close()
     }
   }
 
@@ -149,3 +103,32 @@ class BaseSpec extends AsyncFlatSpec with BeforeAndAfterAll with BeforeAndAfterE
       ",{owner:\"in.ekstep\",code:\"tpd\",IL_SYS_NODE_TYPE:\"DATA_NODE\",apoc_json:\"{\\\"batch\\\": true}\",consumerId:\"9393568c-3a56-47dd-a9a3-34da3c821638\",channel:\"in.ekstep\",description:\"NCF \",type:\"K-12\",createdOn:\"2018-01-23T09:53:50.189+0000\",versionKey:\"1545195552163\",apoc_text:\"APOC\",appId:\"dev.sunbird.portal\",IL_FUNC_OBJECT_TYPE:\"Framework\",name:\"State (Uttar Pradesh)\",lastUpdatedOn:\"2018-12-19T04:59:12.163+0000\",IL_UNIQUE_ID:\"tpd\",status:\"Live\",apoc_num:1}] as row CREATE (n:domain) SET n += row")
   }
 }
+JanusGraphSetup()
+    setUpEmbeddedJanusGraph()
+    setUpEmbeddedCassandra()
+    executeCassandraQuery(script_1, script_2, script_5, script_6, script_7, script_8, script_9, script_10, script_11, script_12)
+  }
+
+  override def afterAll(): Unit = {
+    tearEmbeddedJanusGraphSetup()// Create test data using JanusGraph Gremlin API
+    g.addV("domain").property("identifier", "Num:C3:SC2").property("code", "Num:C3:SC2")
+      .property("IL_SYS_NODE_TYPE", "DATA_NODE").property("IL_FUNC_OBJECT_TYPE", "Concept")
+      .property("name", "Multiplication").property("status", "Live").iterate()
+    
+    g.addV("domain").property("identifier", "do_11232724509261824014").property("code", "31d521da-61de-4220-9277-21ca7ce8335c")
+      .property("IL_SYS_NODE_TYPE", "DATA_NODE").property("IL_FUNC_OBJECT_TYPE", "Content")
+      .property("name", "Untitled Content").property("status", "Live").iterate()
+    
+    g.addV("domain").property("identifier", "NCF").property("code", "NCF")
+      .property("IL_SYS_NODE_TYPE", "DATA_NODE").property("IL_FUNC_OBJECT_TYPE", "Framework")
+      .property("name", "State (Uttar Pradesh)").property("status", "Live").iterate()
+    
+    g.addV("domain").property("identifier", "K-12").property("code", "K-12")
+      .property("IL_SYS_NODE_TYPE", "DATA_NODE").property("IL_FUNC_OBJECT_TYPE", "Framework")
+      .property("name", "State (Uttar Pradesh)").property("status", "Live").iterate()
+    
+    g.addV("domain").property("identifier", "tpd").property("code", "tpd")
+      .property("IL_SYS_NODE_TYPE", "DATA_NODE").property("IL_FUNC_OBJECT_TYPE", "Framework")
+      .property("name", "State (Uttar Pradesh)").property("status", "Live").iterate()
+    
+    g.tx().commit(

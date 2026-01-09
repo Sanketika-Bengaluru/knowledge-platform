@@ -7,7 +7,6 @@ import org.sunbird.cassandra.CassandraConnector
 import org.sunbird.common.Platform
 import org.sunbird.common.dto.{Request, Response, ResponseHandler}
 import org.sunbird.graph.OntologyEngineContext
-import org.sunbird.graph.service.operation.NodeAsyncOperations
 
 import scala.concurrent.{ExecutionContext, Future}
 import scala.jdk.CollectionConverters._

@@ -11,7 +11,6 @@ import org.sunbird.graph.dac.enums.SystemNodeTypes
 import org.sunbird.graph.dac.model.Node
 import org.sunbird.graph.schema.IDefinition
 import org.sunbird.graph.service.common.{DACConfigurationConstants, NodeUpdateMode}
-import org.sunbird.graph.service.operation.SearchAsyncOperations
 
 import scala.concurrent.{ExecutionContext, Future}
 
@@ -75,7 +74,8 @@ trait VersionKeyValidator extends IDefinition {
 
     def getVersionKeyFromDB(identifier: String, graphId: String)(implicit ec: ExecutionContext,  oec: OntologyEngineContext): Future[String] = {
         oec.graphService.getNodeProperty(graphId, identifier, "versionKey").map(property => {
-            val versionKey: String =  property.getPropertyValue.asInstanceOf[org.neo4j.driver.internal.value.StringValue].asString()
+            val propertyValue = property.getPropertyValue
+            val versionKey: String = if (propertyValue != null) propertyValue.toString else ""
             if(StringUtils.isNotBlank(versionKey))
                 versionKey
             else

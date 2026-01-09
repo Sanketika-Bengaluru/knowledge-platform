@@ -51,7 +51,7 @@ class BaseSpec extends AsyncFlatSpec with Matchers with BeforeAndAfterAll {
         .set("index.search.backend", "inmemory")
         .open()
       
-      JanusGraphSchemaManager.initializeGraphSchema(embeddedGraph)
+      JanusGraphSchemaManager.initializeGraphSchema("domain", embeddedGraph)
       g = embeddedGraph.traversal()
     }
   }

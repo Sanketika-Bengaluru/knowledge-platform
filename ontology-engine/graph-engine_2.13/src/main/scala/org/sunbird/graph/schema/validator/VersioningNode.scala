@@ -13,7 +13,6 @@ import org.sunbird.graph.dac.model.Node
 import org.sunbird.graph.exception.GraphErrorCodes
 import org.sunbird.graph.external.ExternalPropsManager
 import org.sunbird.graph.schema.{DefinitionFactory, IDefinition}
-import org.sunbird.graph.service.operation.{NodeAsyncOperations, SearchAsyncOperations}
 import org.sunbird.graph.utils.{NodeUtil, ScalaJsonUtils}
 import org.sunbird.telemetry.logger.TelemetryManager
 

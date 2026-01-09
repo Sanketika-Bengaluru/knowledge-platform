@@ -3,13 +3,15 @@ package org.sunbird.graph
 import org.sunbird.common.Platform
 import org.sunbird.common.dto.{Property, Request, Response, ResponseHandler}
 import org.sunbird.common.exception.ResponseCode
-import org.sunbird.graph.dac.model.{Node, SearchCriteria, SubGraph}
+import org.sunbird.graph.dac.model.{Node, Relation, SearchCriteria, SubGraph}
 import org.sunbird.graph.external.ExternalPropsManager
-import org.sunbird.graph.service.operation.{GraphAsyncOperations, Neo4JBoltSearchOperations, NodeAsyncOperations, SearchAsyncOperations}
+import org.sunbird.graph.service.operation.{AsyncNodeOperations, RelationOperations, SearchOperations, NodeOperations}
 import org.sunbird.graph.util.CSPMetaUtil
 
 import java.lang
+import java.util.concurrent.CompletableFuture
 import scala.concurrent.{ExecutionContext, Future}
+import scala.jdk.FutureConverters._
 
 class GraphService {
     implicit  val ec: ExecutionContext = ExecutionContext.global
@@ -20,7 +22,8 @@ class GraphService {
             val metadata = CSPMetaUtil.updateRelativePath(node.getMetadata)
             node.setMetadata(metadata)
         }
-        NodeAsyncOperations.addNode(graphId, node).map(resNode => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(resNode) else resNode)
+        AsyncNodeOperations.createNodeAsync(graphId, node).asScala
+            .map(resNode => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(resNode) else resNode)
     }
 
     def upsertNode(graphId: String, node: Node, request: Request): Future[Node] = {
@@ -28,31 +31,58 @@ class GraphService {
             val metadata = CSPMetaUtil.updateRelativePath(node.getMetadata)
             node.setMetadata(metadata)
         }
-        NodeAsyncOperations.upsertNode(graphId, node, request).map(resNode => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(resNode) else resNode)
+        AsyncNodeOperations.upsertNodeAsync(graphId, node).asScala
+            .map(resNode => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(resNode) else resNode)
     }
 
     def upsertRootNode(graphId: String, request: Request): Future[Node] = {
-        NodeAsyncOperations.upsertRootNode(graphId, request)
+        // For root node, we use synchronous operation wrapped in Future
+        Future {
+            val rootNode = new Node(graphId, null, "ROOT_NODE")
+            NodeOperations.upsertNode(graphId, rootNode)
+        }
     }
 
     def getNodeByUniqueId(graphId: String, nodeId: String, getTags: Boolean, request: Request): Future[Node] = {
-        SearchAsyncOperations.getNodeByUniqueId(graphId, nodeId, getTags, request).map(node => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(node) else node)
+        AsyncNodeOperations.getNodeByUniqueIdAsync(graphId, nodeId).asScala
+            .map(node => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(node) else node)
     }
 
     def deleteNode(graphId: String, nodeId: String, request: Request): Future[java.lang.Boolean] = {
-        NodeAsyncOperations.deleteNode(graphId, nodeId, request)
+        AsyncNodeOperations.deleteNodeAsync(graphId, nodeId).asScala
+            .map(_ => java.lang.Boolean.TRUE)
     }
 
     def getNodeProperty(graphId: String, identifier: String, property: String): Future[Property] = {
-        SearchAsyncOperations.getNodeProperty(graphId, identifier, property).map(property => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(property) else property)
+        Future {
+            val node = NodeOperations.getNodeByUniqueId(graphId, identifier)
+            val prop = new Property(property, node.getMetadata.get(property))
+            if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(prop) else prop
+        }
     }
+
     def updateNodes(graphId: String, identifiers:java.util.List[String], metadata:java.util.Map[String,AnyRef]):Future[java.util.Map[String, Node]] = {
         val updatedMetadata = if(isrRelativePathEnabled) CSPMetaUtil.updateRelativePath(metadata) else metadata
-        NodeAsyncOperations.updateNodes(graphId, identifiers, updatedMetadata)
+        Future {
+            val resultMap = new java.util.HashMap[String, Node]()
+            val it = identifiers.iterator()
+            while (it.hasNext) {
+                val id = it.next()
+                val node = NodeOperations.updateNode(graphId, id, 
+                    updatedMetadata.asInstanceOf[java.util.Map[String, Object]])
+                resultMap.put(id, node)
+            }
+            resultMap
+        }
     }
 
     def getNodeByUniqueIds(graphId:String, searchCriteria: SearchCriteria): Future[java.util.List[Node]] = {
-        SearchAsyncOperations.getNodeByUniqueIds(graphId, searchCriteria).map(nodes => if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(nodes) else nodes)
+        Future {
+            val nodes = SearchOperations.searchNodes(graphId, searchCriteria)
+            val javaList: java.util.List[Node] = new java.util.ArrayList[Node]()
+            nodes.forEach(node => javaList.add(node))
+            if(isrRelativePathEnabled) CSPMetaUtil.updateAbsolutePath(javaList) else javaList
+        }
     }
 
     def readExternalProps(request: Request, fields: List[String]): Future[Response] = {
@@ -96,19 +126,41 @@ class GraphService {
         ExternalPropsManager.deleteProps(request)
     }
     def checkCyclicLoop(graphId:String, endNodeId: String, startNodeId: String, relationType: String) = {
-        Neo4JBoltSearchOperations.checkCyclicLoop(graphId, endNodeId, relationType, startNodeId)
+        Future {
+            RelationOperations.hasCycle(graphId, startNodeId, 10)
+        }
     }
 
     def removeRelation(graphId: String, relationMap: java.util.List[java.util.Map[String, AnyRef]]) = {
-        GraphAsyncOperations.removeRelation(graphId, relationMap)
+        Future {
+            val it = relationMap.iterator()
+            while (it.hasNext) {
+                val map = it.next()
+                val startNodeId = map.get("startNodeId").asInstanceOf[String]
+                val endNodeId = map.get("endNodeId").asInstanceOf[String]
+                val relationType = map.get("relationType").asInstanceOf[String]
+                RelationOperations.deleteRelation(graphId, startNodeId, relationType, endNodeId)
+            }
+        }
     }
 
     def createRelation(graphId: String, relationMap: java.util.List[java.util.Map[String, AnyRef]]) = {
-        GraphAsyncOperations.createRelation(graphId, relationMap)
+        AsyncNodeOperations.createRelationsBatchAsync(graphId, 
+            relationMap.asInstanceOf[java.util.List[java.util.Map[String, Object]]]
+        ).asScala
     }
 
     def getSubGraph(graphId: String, nodeId: String, depth: Int): Future[SubGraph] = {
-        GraphAsyncOperations.getSubGraph(graphId, nodeId, depth)
+        Future {
+            val subgraphMap = RelationOperations.getSubgraph(graphId, nodeId, depth)
+            // Convert List[Node] to Map[String, Node]
+            val nodesList = subgraphMap.get("nodes").asInstanceOf[java.util.List[Node]]
+            val nodesMap = new java.util.HashMap[String, Node]()
+            nodesList.forEach(node => nodesMap.put(node.getIdentifier, node))
+            
+            val relationsList = subgraphMap.get("relations").asInstanceOf[java.util.List[Relation]]
+            new SubGraph(nodesMap, relationsList)
+        }
     }
 }
 
