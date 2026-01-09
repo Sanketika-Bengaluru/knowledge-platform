@@ -1,0 +1,182 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sunbird-yugabyte-master
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: sunbird-yugabyte
+    component: master
+spec:
+  serviceName: sunbird-yugabyte-master
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sunbird-yugabyte
+      component: master
+  template:
+    metadata:
+      labels:
+        app: sunbird-yugabyte
+        component: master
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - sunbird-yugabyte
+                - key: component
+                  operator: In
+                  values:
+                  - master
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: yugabyte-master
+        image: yugabytedb/yugabyte:{{ .Values.yugabyte.version | default "latest" }}
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        - name: HOSTNAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        command:
+        - /home/yugabyte/bin/yb-master
+        - --fs_data_dirs=/mnt/data/yb-master
+        - --master_addresses=sunbird-yugabyte-master-0.sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100,sunbird-yugabyte-master-1.sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100,sunbird-yugabyte-master-2.sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100
+        - --replication_factor=3
+        - --rpc_bind_addresses=$(POD_IP)
+        - --server_broadcast_addresses=$(HOSTNAME).sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100
+        ports:
+        - containerPort: 7000
+          name: master-ui
+        - containerPort: 7100
+          name: master-rpc
+        volumeMounts:
+        - name: datadir
+          mountPath: /mnt/data
+        resources:
+          requests:
+            memory: {{ .Values.yugabyte.master.memory | default "2Gi" }}
+            cpu: {{ .Values.yugabyte.master.cpu | default "1000m" }}
+          limits:
+            memory: {{ .Values.yugabyte.master.memoryLimit | default "4Gi" }}
+            cpu: {{ .Values.yugabyte.master.cpuLimit | default "2000m" }}
+  volumeClaimTemplates:
+  - metadata:
+      name: datadir
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: {{ .Values.yugabyte.storageClass | default "standard" }}
+      resources:
+        requests:
+          storage: {{ .Values.yugabyte.master.storage | default "10Gi" }}
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: sunbird-yugabyte-tserver
+  namespace: {{ .Values.namespace }}
+  labels:
+    app: sunbird-yugabyte
+    component: tserver
+spec:
+  serviceName: sunbird-yugabyte-tserver
+  replicas: 3
+  selector:
+    matchLabels:
+      app: sunbird-yugabyte
+      component: tserver
+  template:
+    metadata:
+      labels:
+        app: sunbird-yugabyte
+        component: tserver
+    spec:
+      affinity:
+        podAntiAffinity:
+          preferredDuringSchedulingIgnoredDuringExecution:
+          - weight: 100
+            podAffinityTerm:
+              labelSelector:
+                matchExpressions:
+                - key: app
+                  operator: In
+                  values:
+                  - sunbird-yugabyte
+                - key: component
+                  operator: In
+                  values:
+                  - tserver
+              topologyKey: kubernetes.io/hostname
+      containers:
+      - name: yugabyte-tserver
+        image: yugabytedb/yugabyte:{{ .Values.yugabyte.version | default "latest" }}
+        imagePullPolicy: IfNotPresent
+        env:
+        - name: POD_IP
+          valueFrom:
+            fieldRef:
+              fieldPath: status.podIP
+        - name: HOSTNAME
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
+        - name: NAMESPACE
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.namespace
+        command:
+        - /home/yugabyte/bin/yb-tserver
+        - --fs_data_dirs=/mnt/data/yb-tserver
+        - --tserver_master_addrs=sunbird-yugabyte-master-0.sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100,sunbird-yugabyte-master-1.sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100,sunbird-yugabyte-master-2.sunbird-yugabyte-master.$(NAMESPACE).svc.cluster.local:7100
+        - --rpc_bind_addresses=$(POD_IP)
+        - --server_broadcast_addresses=$(HOSTNAME).sunbird-yugabyte-tserver.$(NAMESPACE).svc.cluster.local:9100
+        - --cql_proxy_bind_address=$(POD_IP)
+        - --pgsql_proxy_bind_address=$(POD_IP)
+        - --redis_proxy_bind_address=$(POD_IP)
+        - --start_pgsql_proxy
+        - --start_cql_proxy
+        - --start_redis_proxy
+        ports:
+        - containerPort: 9042
+          name: yql
+        - containerPort: 12000
+          name: yql-http
+        - containerPort: 5433
+          name: ysql
+        - containerPort: 6379
+          name: redis
+        - containerPort: 9100
+          name: tserver-rpc
+        volumeMounts:
+        - name: datadir
+          mountPath: /mnt/data
+        resources:
+          requests:
+            memory: {{ .Values.yugabyte.tserver.memory | default "4Gi" }}
+            cpu: {{ .Values.yugabyte.tserver.cpu | default "2000m" }}
+          limits:
+            memory: {{ .Values.yugabyte.tserver.memoryLimit | default "8Gi" }}
+            cpu: {{ .Values.yugabyte.tserver.cpuLimit | default "4000m" }}
+  volumeClaimTemplates:
+  - metadata:
+      name: datadir
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      storageClassName: {{ .Values.yugabyte.storageClass | default "standard" }}
+      resources:
+        requests:
+          storage: {{ .Values.yugabyte.tserver.storage | default "50Gi" }}

@@ -4,92 +4,123 @@ import com.typesafe.config.ConfigFactory;
 import org.apache.commons.io.FileUtils;
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.neo4j.driver.v1.*;
-import org.neo4j.graphdb.GraphDatabaseService;
+import org.janusgraph.core.JanusGraph;
+import org.janusgraph.core.JanusGraphFactory;
 import org.sunbird.common.Platform;
-import org.sunbird.graph.service.util.DriverUtil;
-import org.testcontainers.containers.FixedHostPortGenericContainer;
-import org.testcontainers.containers.wait.strategy.Wait;
+import org.sunbird.graph.dac.util.JanusGraphSchemaManager;
+import org.sunbird.graph.service.util.JanusGraphDriverUtil;
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
 
 public class BaseTest {
 
-	private static Driver driver = null ;
+	private static JanusGraph embeddedGraph = null;
+	private static GraphTraversalSource g = null;
 	private static com.typesafe.config.Config configFile = ConfigFactory.load();
 	private static String graphDirectory = configFile.getString("graph.dir");
-	private static int hostHttpsPort = 7473;
-	private static int hostHttpPort = 7474;
-	private static int hostBoltPort = 7687;
-	private static FixedHostPortGenericContainer<?> neo4jContainer = new FixedHostPortGenericContainer<>("neo4j:3.5.0");
-	protected static Session graphDb = null;
+	protected static String testGraphId = "domain"; // Default test graph ID
 
 	private static String GRAPH_DIRECTORY_PROPERTY_KEY = "graph.dir";
 
 	@AfterClass
 	public static void afterTest() throws Exception {
-		neo4jContainer.stop();
-		DriverUtil.closeDrivers();
+		tearEmbeddedJanusGraphSetup();
+		JanusGraphDriverUtil.closeAllGraphs();
 	}
 
 	@BeforeClass
 	public static void before() throws Exception {
-		setupEmbeddedNeo4J();
+		setupEmbeddedJanusGraph();
 	}
 
-	private static void registerShutdownHook(final GraphDatabaseService graphDb) {
+	private static void registerShutdownHook(final JanusGraph graphDb) {
 		Runtime.getRuntime().addShutdownHook(new Thread() {
 			@Override
 			public void run() {
 				try {
-					tearEmbeddedNeo4JSetup();
+					tearEmbeddedJanusGraphSetup();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}
 			}
 		});
 	}
-	private static void setupEmbeddedNeo4J() throws InterruptedException {
-		if (graphDb == null) {
+
+	/**
+	 * Setup embedded JanusGraph with inmemory backend for testing
+	 */
+	private static void setupEmbeddedJanusGraph() throws InterruptedException {
+		if (embeddedGraph == null) {
 			File graphDir = new File(graphDirectory);
 			if (!graphDir.exists()) {
 				graphDir.mkdirs();
 			}
-			neo4jContainer.withFixedExposedPort(hostHttpsPort, hostHttpsPort);
-			neo4jContainer.withFixedExposedPort(hostHttpPort, hostHttpPort);
-			neo4jContainer.withFixedExposedPort(hostBoltPort, hostBoltPort);
-			neo4jContainer.withEnv("NEO4J_dbms_directories_data", graphDirectory);
-			neo4jContainer.withEnv("NEO4J_dbms_security_auth__enabled", "false");
-			neo4jContainer.withCommand("neo4j", "console");
-			neo4jContainer.withExtraHost("extra-host", "127.0.0.1");
-			neo4jContainer.withStartupTimeout(java.time.Duration.ofSeconds(60));
-			neo4jContainer.waitingFor(Wait.forListeningPort());
-			neo4jContainer.start();
 
-			Thread.sleep(20000);
-			String boltAddress = "bolt://"+ "127.0.0.1" + ":" + hostBoltPort; //container.getBoltUrl();
-			Config config = Config.builder()
-					.withConnectionTimeout(30, TimeUnit.SECONDS)
-					.withMaxTransactionRetryTime(1, TimeUnit.MINUTES)
-					.build();
-			System.out.println(" bolt address " + boltAddress);
-			driver = GraphDatabase.driver(boltAddress, AuthTokens.none(), config);
-			graphDb = driver.session();
+			System.out.println("Setting up embedded JanusGraph with inmemory backend");
+			
+			// Create JanusGraph with inmemory backend (no external dependencies)
+			embeddedGraph = JanusGraphFactory.build()
+					.set("storage.backend", "inmemory")
+					.set("index.search.backend", "inmemory")
+					.open();
+
+			// Initialize schema
+			JanusGraphSchemaManager.initializeGraphSchema("test", embeddedGraph);
+
+			// Get traversal source
+			g = embeddedGraph.traversal();
+
+			System.out.println("Embedded JanusGraph initialized successfully");
+			
+			registerShutdownHook(embeddedGraph);
 		}
 	}
 
-	private static void tearEmbeddedNeo4JSetup() throws Exception {
-		if (null != graphDb)
-			graphDb.close();
-		Thread.sleep(2000);
-		deleteEmbeddedNeo4j(new File(Platform.config.getString(GRAPH_DIRECTORY_PROPERTY_KEY)));
+	/**
+	 * Tear down embedded JanusGraph
+	 */
+	private static void tearEmbeddedJanusGraphSetup() throws Exception {
+		if (g != null) {
+			try {
+				g.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		if (embeddedGraph != null) {
+			try {
+				embeddedGraph.close();
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+		
+		Thread.sleep(1000);
+		deleteEmbeddedGraph(new File(Platform.config.getString(GRAPH_DIRECTORY_PROPERTY_KEY)));
 	}
 
-	private static void deleteEmbeddedNeo4j(final File emDb) throws IOException {
-		FileUtils.deleteDirectory(emDb);
+	private static void deleteEmbeddedGraph(final File emDb) throws IOException {
+		if (emDb.exists()) {
+			FileUtils.deleteDirectory(emDb);
+		}
+	}
+
+	/**
+	 * Get graph traversal source for tests
+	 */
+	protected static GraphTraversalSource getGraphTraversal() {
+		return g;
+	}
+
+	/**
+	 * Get embedded graph instance
+	 */
+	protected static JanusGraph getEmbeddedGraph() {
+		return embeddedGraph;
 	}
 
 	protected static void delay(long time) {
@@ -100,7 +131,32 @@ public class BaseTest {
 		}
 	}
 
+	/**
+	 * Create bulk test nodes using Gremlin
+	 */
 	protected void createBulkNodes() {
-		graphDb.run("UNWIND [{nodeId:'do_0000123'},{nodeId:'do_0000234'},{nodeId:'do_0000345'}] as row with row.nodeId as Id CREATE (n:domain{IL_UNIQUE_ID:Id});");
+		// Create test nodes using Gremlin instead of Cypher
+		String[] nodeIds = {"do_0000123", "do_0000234", "do_0000345"};
+		
+		for (String nodeId : nodeIds) {
+			g.addV(testGraphId)
+				.property("IL_UNIQUE_ID", nodeId)
+				.property("IL_SYS_NODE_TYPE", "DATA_NODE")
+				.property("IL_FUNC_OBJECT_TYPE", "Content")
+				.next();
+		}
+		
+		// Commit transaction
+		g.tx().commit();
+		
+		System.out.println("Created " + nodeIds.length + " test nodes");
+	}
+
+	/**
+	 * Clear all test data from graph
+	 */
+	protected void clearTestData() {
+		g.V().drop().iterate();
+		g.tx().commit();
 	}
 }

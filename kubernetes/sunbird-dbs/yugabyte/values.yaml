@@ -1,0 +1,56 @@
+# Yugabyte Configuration Values
+
+namespace: default
+
+yugabyte:
+  version: "2.20.1.0-b2"  # Use stable version
+  storageClass: "standard"
+  
+  # Master node configuration
+  master:
+    memory: "2Gi"
+    memoryLimit: "4Gi"
+    cpu: "1000m"
+    cpuLimit: "2000m"
+    storage: "10Gi"
+  
+  # TServer (tablet server) configuration
+  tserver:
+    memory: "4Gi"
+    memoryLimit: "8Gi"
+    cpu: "2000m"
+    cpuLimit: "4000m"
+    storage: "50Gi"
+
+# JanusGraph connection settings (used by application)
+janusgraph:
+  cql:
+    hostname: "sunbird-yugabyte-tserver"
+    port: 9042
+    keyspace: "janusgraph"
+    replicationFactor: 3
+    consistencyLevel: "QUORUM"
+    
+    # Connection pool settings
+    pool:
+      maxConnectionsPerHost: 8
+      maxRequestsPerConnection: 32768
+      poolTimeoutMillis: 30000
+      heartbeatIntervalSeconds: 30
+      idleTimeoutSeconds: 120
+    
+    # Cache settings
+    cache:
+      dbCacheSize: 0.5
+      dbCacheCleanWaitTime: 50
+      dbCacheTime: 180000
+      txCacheSize: 20000
+
+# Environment variables for knowledge platform services
+env:
+  JANUSGRAPH_STORAGE_BACKEND: "cql"
+  JANUSGRAPH_STORAGE_HOSTNAME: "sunbird-yugabyte-tserver"
+  JANUSGRAPH_STORAGE_PORT: "9042"
+  JANUSGRAPH_STORAGE_CQL_KEYSPACE: "janusgraph"
+  JANUSGRAPH_STORAGE_CQL_REPLICATION_FACTOR: "3"
+  JANUSGRAPH_INDEX_SEARCH_BACKEND: "elasticsearch"

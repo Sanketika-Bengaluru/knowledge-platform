@@ -1,0 +1,857 @@
+[INFO] Scanning for projects...
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.sunbird:cassandra-connector:jar:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: io.netty:netty-codec:jar -> duplicate declaration of version 4.1.68.Final @ line 75, column 21
+[WARNING] 
+[WARNING] Some problems were encountered while building the effective model for org.sunbird:content-service:play2:1.0-SNAPSHOT
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: io.netty:netty-codec-http:jar -> duplicate declaration of version ${netty.version} @ line 273, column 29
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: io.netty:netty-codec:jar -> duplicate declaration of version ${netty.version} @ line 284, column 21
+[WARNING] 'dependencies.dependency.(groupId:artifactId:type:classifier)' must be unique: io.netty:netty-handler:jar -> duplicate declaration of version ${netty.version} @ line 289, column 21
+[WARNING] 
+[WARNING] It is highly recommended to fix these problems because they threaten the stability of your build.
+[WARNING] 
+[WARNING] For this reason, future Maven versions might no longer support building such malformed projects.
+[WARNING] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Sunbird Knowledge Platform                                         [pom]
+[INFO] platform-core                                                      [pom]
+[INFO] platform-common                                                    [jar]
+[INFO] Platform Telemetry                                                 [jar]
+[INFO] actor-core                                                         [jar]
+[INFO] schema-validator                                                   [jar]
+[INFO] platform-cache                                                     [jar]
+[INFO] cassandra-connector                                                [jar]
+[INFO] kafka-client                                                       [jar]
+[INFO] ontology-engine                                                    [pom]
+[INFO] graph-common                                                       [jar]
+[INFO] graph-dac-api                                                      [jar]
+[INFO] graph-core_2.13                                                    [jar]
+[INFO] parseq                                                             [jar]
+[INFO] graph-engine_2.13                                                  [jar]
+[INFO] platform-modules                                                   [pom]
+[INFO] url-manager                                                        [jar]
+[INFO] mimetype-manager                                                   [jar]
+[INFO] import-manager                                                     [jar]
+[INFO] content-api                                                        [pom]
+[INFO] hierarchy-manager                                                  [jar]
+[INFO] content-actors                                                     [jar]
+[INFO] collection-csv-actors                                              [jar]
+[INFO] content-service                                                  [play2]
+[INFO] taxonomy-api                                                       [pom]
+[INFO] taxonomy-actors                                                    [jar]
+[INFO] taxonomy-service                                                 [play2]
+[INFO] search-api                                                         [pom]
+[INFO] search-core                                                        [jar]
+[INFO] search-actors                                                      [jar]
+[INFO] search-service                                                   [play2]
+[INFO] 
+[INFO] -------------------< org.sunbird:knowledge-platform >-------------------
+[INFO] Building Sunbird Knowledge Platform 1.0-SNAPSHOT                  [1/31]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ knowledge-platform ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ knowledge-platform ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/knowledge-platform/1.0-SNAPSHOT/knowledge-platform-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ---------------------< org.sunbird:platform-core >----------------------
+[INFO] Building platform-core 1.0-SNAPSHOT                               [2/31]
+[INFO]   from platform-core/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ platform-core ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ platform-core ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/platform-core/1.0-SNAPSHOT/platform-core-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] --------------------< org.sunbird:platform-common >---------------------
+[INFO] Building platform-common 1.0-SNAPSHOT                             [3/31]
+[INFO]   from platform-core/platform-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.20.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ platform-common ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default-prepare-agent) @ platform-common ---
+[INFO] argLine set to -javaagent:/Users/sanketikam4/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ platform-common ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ platform-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 18 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/target/classes
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/main/java/org/sunbird/common/JsonUtils.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/main/java/org/sunbird/common/JsonUtils.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ platform-common ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ platform-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 12 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/target/test-classes
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/test/java/org/sunbird/common/HttpUtilTest.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/test/java/org/sunbird/common/HttpUtilTest.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ platform-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.8:report (default-report) @ platform-common ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ platform-common ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/target/platform-common-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jacoco:0.8.8:report-aggregate (report-aggregate) @ platform-common ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ platform-common ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/platform-common/1.0-SNAPSHOT/platform-common-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/target/platform-common-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/platform-common/1.0-SNAPSHOT/platform-common-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -------------------< org.sunbird:platform-telemetry >-------------------
+[INFO] Building Platform Telemetry 1.0-SNAPSHOT                          [4/31]
+[INFO]   from platform-core/platform-telemetry/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ platform-telemetry ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ platform-telemetry ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ platform-telemetry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 17 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ platform-telemetry ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ platform-telemetry ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/target/test-classes
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/src/test/java/org/sunbird/telemetry/logger/TestTelemetryManager.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/src/test/java/org/sunbird/telemetry/logger/TestTelemetryManager.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ platform-telemetry ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ platform-telemetry ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/target/platform-telemetry-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ platform-telemetry ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/platform-telemetry/1.0-SNAPSHOT/platform-telemetry-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-telemetry/target/platform-telemetry-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/platform-telemetry/1.0-SNAPSHOT/platform-telemetry-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] -----------------------< org.sunbird:actor-core >-----------------------
+[INFO] Building actor-core 1.0-SNAPSHOT                                  [5/31]
+[INFO]   from platform-core/actor-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 1 problem was encountered while building the effective model for org.javassist:javassist:jar:3.21.0-GA during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ actor-core ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ actor-core ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ actor-core ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ actor-core ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ actor-core ---
+[INFO] No sources to compile
+[INFO] 
+[INFO] --- surefire:3.0.0-M4:test (default-test) @ actor-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ actor-core ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/target/actor-core-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ actor-core ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/actor-core/1.0-SNAPSHOT/actor-core-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/actor-core/target/actor-core-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/actor-core/1.0-SNAPSHOT/actor-core-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --------------------< org.sunbird:schema-validator >--------------------
+[INFO] Building schema-validator 1.0-SNAPSHOT                            [6/31]
+[INFO]   from platform-core/schema-validator/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ schema-validator ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default-prepare-agent) @ schema-validator ---
+[INFO] argLine set to -javaagent:/Users/sanketikam4/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ schema-validator ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ schema-validator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 9 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/target/classes
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/src/main/java/org/sunbird/schema/impl/BaseSchemaValidator.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/src/main/java/org/sunbird/schema/impl/BaseSchemaValidator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ schema-validator ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ schema-validator ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/target/test-classes
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/src/test/java/org/sunbird/schema/impl/TestBaseSchemaValidator.java: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/src/test/java/org/sunbird/schema/impl/TestBaseSchemaValidator.java uses unchecked or unsafe operations.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/src/test/java/org/sunbird/schema/impl/TestBaseSchemaValidator.java: Recompile with -Xlint:unchecked for details.
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ schema-validator ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.8:report (default-report) @ schema-validator ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ schema-validator ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/target/schema-validator-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jacoco:0.8.8:report-aggregate (report-aggregate) @ schema-validator ---
+[INFO] Analyzed bundle 'platform-common' with 21 classes
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ schema-validator ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/schema-validator/1.0-SNAPSHOT/schema-validator-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/schema-validator/target/schema-validator-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/schema-validator/1.0-SNAPSHOT/schema-validator-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------------------< org.sunbird:platform-cache >---------------------
+[INFO] Building platform-cache 1.0-SNAPSHOT                              [7/31]
+[INFO]   from platform-core/platform-cache/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ platform-cache ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ platform-cache ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/src/main/resources
+[INFO] 
+[INFO] --- scala:4.4.0:add-source (scala-compile-first) @ platform-cache ---
+[INFO] 
+[INFO] --- scala:4.4.0:compile (scala-compile-first) @ platform-cache ---
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: /Users/sanketikam4/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.13-1.3.5-bin_2.13.12__55.0-1.3.5_20200330T000931.jar
+[INFO] Compiling 2 Scala sources to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/target/classes ...
+[INFO] Done compiling.
+[INFO] compile in 2.2 s
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ platform-cache ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ platform-cache ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/src/test/resources
+[INFO] 
+[INFO] --- scala:4.4.0:testCompile (scala-test-compile) @ platform-cache ---
+[WARNING] Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: /Users/sanketikam4/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.13-1.3.5-bin_2.13.12__55.0-1.3.5_20200330T000931.jar
+[INFO] Compiling 1 Scala source to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/target/test-classes ...
+[WARNING] : 6 deprecations (since 2.13.0)
+[WARNING] : 2 deprecations (since 3.1.0)
+[WARNING] : 8 deprecations in total; re-run with -deprecation for details
+[WARNING] three warnings found
+[INFO] Done compiling.
+[INFO] compile in 1.5 s
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ platform-cache ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ platform-cache ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- scalatest:2.0.0:test (test) @ platform-cache ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ platform-cache ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/target/platform-cache-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ platform-cache ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/platform-cache/1.0-SNAPSHOT/platform-cache-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-cache/target/platform-cache-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/platform-cache/1.0-SNAPSHOT/platform-cache-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ------------------< org.sunbird:cassandra-connector >-------------------
+[INFO] Building cassandra-connector 1.0-SNAPSHOT                         [8/31]
+[INFO]   from platform-core/cassandra-connector/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ cassandra-connector ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ cassandra-connector ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ cassandra-connector ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 4 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ cassandra-connector ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ cassandra-connector ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ cassandra-connector ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.2.0:jar (default-jar) @ cassandra-connector ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target/cassandra-connector-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- jar:3.2.0:test-jar (default) @ cassandra-connector ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target/cassandra-connector-1.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ cassandra-connector ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/cassandra-connector/1.0-SNAPSHOT/cassandra-connector-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target/cassandra-connector-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/cassandra-connector/1.0-SNAPSHOT/cassandra-connector-1.0-SNAPSHOT.jar
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/cassandra-connector/target/cassandra-connector-1.0-SNAPSHOT-tests.jar to /Users/sanketikam4/.m2/repository/org/sunbird/cassandra-connector/1.0-SNAPSHOT/cassandra-connector-1.0-SNAPSHOT-tests.jar
+[INFO] 
+[INFO] ----------------------< org.sunbird:kafka-client >----------------------
+[INFO] Building kafka-client 1.0-SNAPSHOT                                [9/31]
+[INFO]   from platform-core/kafka-client/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[WARNING] 2 problems were encountered while building the effective model for org.apache.yetus:audience-annotations:jar:0.5.0 during dependency collection step for project (use -X to see details)
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ kafka-client ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ kafka-client ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/src/main/resources
+[INFO] 
+[INFO] --- scala:4.4.0:add-source (scala-compile-first) @ kafka-client ---
+[INFO] 
+[INFO] --- scala:4.4.0:compile (scala-compile-first) @ kafka-client ---
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: /Users/sanketikam4/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.13-1.3.5-bin_2.13.12__55.0-1.3.5_20200330T000931.jar
+[INFO] Compiling 1 Scala source to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/target/classes ...
+[INFO] Done compiling.
+[INFO] compile in 1.1 s
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ kafka-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ kafka-client ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/src/test/resources
+[INFO] 
+[INFO] --- scala:4.4.0:testCompile (scala-test-compile) @ kafka-client ---
+[WARNING] Direct modification of testCompileSourceRoots through add() is deprecated and will not work in Maven 4.0.0. Please use the add/remove methods instead. If you're using a plugin that causes this warning, please upgrade to the latest version and report an issue if the warning persists. To disable these warnings, set -Dmaven.project.sourceRoots.warningsDisabled=true on the command line, in the .mvn/maven.config file, or in project POM properties.
+[INFO] Using incremental compilation using Mixed compile order
+[INFO] Compiler bridge file: /Users/sanketikam4/.sbt/1.0/zinc/org.scala-sbt/org.scala-sbt-compiler-bridge_2.13-1.3.5-bin_2.13.12__55.0-1.3.5_20200330T000931.jar
+[INFO] Compiling 2 Scala sources to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/target/test-classes ...
+[WARNING] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/src/test/scala/org/sunbird/kafka/test/BaseTest.scala:10: Implicit definition should have explicit type (inferred io.github.embeddedkafka.EmbeddedKafkaConfig) [quickfixable]
+[WARNING] : 7 deprecations (since 2.8.0); re-run with -deprecation for details
+[WARNING] two warnings found
+[INFO] Done compiling.
+[INFO] compile in 1.4 s
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ kafka-client ---
+[INFO] Changes detected - recompiling the module!
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ kafka-client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- scalatest:1.0:test (test) @ kafka-client ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ kafka-client ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/target/kafka-client-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ kafka-client ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/kafka-client/1.0-SNAPSHOT/kafka-client-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/kafka-client/target/kafka-client-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/kafka-client/1.0-SNAPSHOT/kafka-client-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --------------------< org.sunbird:ontology-engine >---------------------
+[INFO] Building ontology-engine 1.0-SNAPSHOT                            [10/31]
+[INFO]   from ontology-engine/pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ ontology-engine ---
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ ontology-engine ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/ontology-engine/1.0-SNAPSHOT/ontology-engine-1.0-SNAPSHOT.pom
+[INFO] 
+[INFO] ----------------------< org.sunbird:graph-common >----------------------
+[INFO] Building graph-common 1.0-SNAPSHOT                               [11/31]
+[INFO]   from ontology-engine/graph-common/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ graph-common ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default-prepare-agent) @ graph-common ---
+[INFO] argLine set to -javaagent:/Users/sanketikam4/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ graph-common ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ graph-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 5 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ graph-common ---
+[INFO] Copying 1 resource from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.8.1:testCompile (default-testCompile) @ graph-common ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/target/test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ graph-common ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.8:report (default-report) @ graph-common ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:3.4.1:jar (default-jar) @ graph-common ---
+[INFO] Building jar: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/target/graph-common-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] --- install:3.1.2:install (default-install) @ graph-common ---
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/pom.xml to /Users/sanketikam4/.m2/repository/org/sunbird/graph-common/1.0-SNAPSHOT/graph-common-1.0-SNAPSHOT.pom
+[INFO] Installing /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/target/graph-common-1.0-SNAPSHOT.jar to /Users/sanketikam4/.m2/repository/org/sunbird/graph-common/1.0-SNAPSHOT/graph-common-1.0-SNAPSHOT.jar
+[INFO] 
+[INFO] ---------------------< org.sunbird:graph-dac-api >----------------------
+[INFO] Building graph-dac-api 1.0-SNAPSHOT                              [12/31]
+[INFO]   from ontology-engine/graph-dac-api/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ graph-dac-api ---
+[INFO] Deleting /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/target
+[INFO] 
+[INFO] --- jacoco:0.8.8:prepare-agent (default-prepare-agent) @ graph-dac-api ---
+[INFO] argLine set to -javaagent:/Users/sanketikam4/.m2/repository/org/jacoco/org.jacoco.agent/0.8.8/org.jacoco.agent-0.8.8-runtime.jar=destfile=/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ graph-dac-api ---
+[INFO] skip non existing resourceDirectory /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ graph-dac-api ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 42 source files to /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/target/classes
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java uses or overrides a deprecated API.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java: Recompile with -Xlint:deprecation for details.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java: Some input files use unchecked or unsafe operations.
+[INFO] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java: Recompile with -Xlint:unchecked for details.
+[INFO] Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+[INFO] -------------------------------------------------------------
+[ERROR] COMPILATION ERROR : 
+[INFO] -------------------------------------------------------------
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[7,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[10,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[11,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[12,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[97,41] cannot find symbol
+  symbol:   class Relationship
+  location: class org.sunbird.graph.dac.model.Relation
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[125,66] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[188,57] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[201,61] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[213,63] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[230,78] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[169,45] cannot find symbol
+  symbol:   class Record
+  location: class org.sunbird.graph.service.operation.GraphAsyncOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[9,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[10,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[11,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/NodeQueryGenerationUtil.java:[4,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[7,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[21,36] cannot find symbol
+  symbol:   class Driver
+  location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[23,23] cannot find symbol
+  symbol:   class Driver
+  location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[37,23] cannot find symbol
+  symbol:   class Driver
+  location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[46,23] cannot find symbol
+  symbol:   class Config
+  location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[63,50] cannot find symbol
+  symbol:   class Driver
+  location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java:[4,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[5,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[6,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[26,65] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[76,73] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[9,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[9,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[10,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[106,41] cannot find symbol
+  symbol:   class Record
+  location: class org.sunbird.graph.service.operation.SearchAsyncOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[8,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[9,33] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[773,29] cannot find symbol
+  symbol:   class Relationship
+  location: class org.sunbird.graph.service.util.GraphQueryGenerationUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[42,35] cannot find symbol
+  symbol:   class ClientException
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[46,35] cannot find symbol
+  symbol:   class ClientException
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[50,35] cannot find symbol
+  symbol:   class ClientException
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[54,35] cannot find symbol
+  symbol:   class ClientException
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[58,17] cannot find symbol
+  symbol:   class Driver
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[60,22] cannot find symbol
+  symbol:   class Session
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[67,25] cannot find symbol
+  symbol:   class StatementResult
+  location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[41,29] incompatible types: java.lang.Object cannot be converted to long
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[111,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_INVALID_RELATION
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[115,29] reference to Relation is ambiguous
+  both constructor Relation(java.lang.String,org.apache.tinkerpop.gremlin.structure.Edge) in org.sunbird.graph.dac.model.Relation and constructor Relation(java.lang.String,Relationship) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[135,20] incompatible types: java.lang.Object cannot be converted to long
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[105,54] cannot find symbol
+  symbol:   method getProperty(java.lang.String)
+  location: variable startNode of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[106,50] cannot find symbol
+  symbol:   method getProperty(java.lang.String)
+  location: variable endNode of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[107,38] reference to getName is ambiguous
+  both method getName(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getName(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[108,36] reference to getName is ambiguous
+  both method getName(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getName(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[111,44] reference to getObjectType is ambiguous
+  both method getObjectType(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getObjectType(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[112,42] reference to getObjectType is ambiguous
+  both method getObjectType(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getObjectType(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[133,42] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[133,86] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[135,42] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[135,84] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[152,33] cannot find symbol
+  symbol:   class Value
+  location: class org.sunbird.graph.dac.model.Relation
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[176,44] cannot find symbol
+  symbol:   method getProperty(java.lang.String,<nulltype>)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[178,45] cannot find symbol
+  symbol:   method getProperty(java.lang.String,<nulltype>)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[180,61] cannot find symbol
+  symbol:   method getProperty(java.lang.String,<nulltype>)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[182,69] cannot find symbol
+  symbol:   method getProperty(java.lang.String,<nulltype>)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[206,37] cannot find symbol
+  symbol:   method getProperty(java.lang.String,<nulltype>)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[210,37] cannot find symbol
+  symbol:   method getProperty(java.lang.String,<nulltype>)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[220,53] cannot find symbol
+  symbol:   method getPropertyKeys()
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[223,63] cannot find symbol
+  symbol:   method getProperty(java.lang.String)
+  location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[236,41] cannot find symbol
+  symbol:   class Value
+  location: class org.sunbird.graph.dac.model.Relation
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[36,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_ADD_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[41,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_ADD_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[72,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_UPDATE_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[77,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_UPDATE_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[103,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_UPDATE_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[126,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_DELETE_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[140,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_UPDATE_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[154,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_UPDATE_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[167,57] cannot find symbol
+  symbol:   variable ERR_GRAPH_GET_NODE
+  location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[INFO] 100 errors 
+[INFO] -------------------------------------------------------------
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Sunbird Knowledge Platform 1.0-SNAPSHOT:
+[INFO] 
+[INFO] Sunbird Knowledge Platform ......................... SUCCESS [  0.076 s]
+[INFO] platform-core ...................................... SUCCESS [  0.005 s]
+[INFO] platform-common .................................... SUCCESS [  1.110 s]
+[INFO] Platform Telemetry ................................. SUCCESS [  0.181 s]
+[INFO] actor-core ......................................... SUCCESS [  0.123 s]
+[INFO] schema-validator ................................... SUCCESS [  0.267 s]
+[INFO] platform-cache ..................................... SUCCESS [  4.008 s]
+[INFO] cassandra-connector ................................ SUCCESS [  0.389 s]
+[INFO] kafka-client ....................................... SUCCESS [  2.610 s]
+[INFO] ontology-engine .................................... SUCCESS [  0.002 s]
+[INFO] graph-common ....................................... SUCCESS [  0.134 s]
+[INFO] graph-dac-api ...................................... FAILURE [  0.634 s]
+[INFO] graph-core_2.13 .................................... SKIPPED
+[INFO] parseq ............................................. SKIPPED
+[INFO] graph-engine_2.13 .................................. SKIPPED
+[INFO] platform-modules ................................... SKIPPED
+[INFO] url-manager ........................................ SKIPPED
+[INFO] mimetype-manager ................................... SKIPPED
+[INFO] import-manager ..................................... SKIPPED
+[INFO] content-api ........................................ SKIPPED
+[INFO] hierarchy-manager .................................. SKIPPED
+[INFO] content-actors ..................................... SKIPPED
+[INFO] collection-csv-actors .............................. SKIPPED
+[INFO] content-service .................................... SKIPPED
+[INFO] taxonomy-api ....................................... SKIPPED
+[INFO] taxonomy-actors .................................... SKIPPED
+[INFO] taxonomy-service ................................... SKIPPED
+[INFO] search-api ......................................... SKIPPED
+[INFO] search-core ........................................ SKIPPED
+[INFO] search-actors ...................................... SKIPPED
+[INFO] search-service ..................................... SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  9.805 s
+[INFO] Finished at: 2026-01-09T15:05:27+05:30
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.apache.maven.plugins:maven-compiler-plugin:3.8.1:compile (default-compile) on project graph-dac-api: Compilation failure: Compilation failure: 
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[7,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[10,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[11,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[12,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[97,41] cannot find symbol
+[ERROR]   symbol:   class Relationship
+[ERROR]   location: class org.sunbird.graph.dac.model.Relation
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[125,66] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[188,57] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[201,61] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[213,63] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[230,78] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java:[169,45] cannot find symbol
+[ERROR]   symbol:   class Record
+[ERROR]   location: class org.sunbird.graph.service.operation.GraphAsyncOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[9,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[10,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java:[11,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/NodeQueryGenerationUtil.java:[4,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[7,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[21,36] cannot find symbol
+[ERROR]   symbol:   class Driver
+[ERROR]   location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[23,23] cannot find symbol
+[ERROR]   symbol:   class Driver
+[ERROR]   location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[37,23] cannot find symbol
+[ERROR]   symbol:   class Driver
+[ERROR]   location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[46,23] cannot find symbol
+[ERROR]   symbol:   class Config
+[ERROR]   location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java:[63,50] cannot find symbol
+[ERROR]   symbol:   class Driver
+[ERROR]   location: class org.sunbird.graph.service.util.DriverUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java:[4,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[5,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[6,25] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[26,65] package org.neo4j.graphdb does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java:[76,73] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java:[9,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[8,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[9,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[10,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java:[106,41] cannot find symbol
+[ERROR]   symbol:   class Record
+[ERROR]   location: class org.sunbird.graph.service.operation.SearchAsyncOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[4,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[5,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[6,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[7,27] package org.neo4j.driver.v1 does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[8,38] package org.neo4j.driver.v1.exceptions does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[9,33] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java:[773,29] cannot find symbol
+[ERROR]   symbol:   class Relationship
+[ERROR]   location: class org.sunbird.graph.service.util.GraphQueryGenerationUtil
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[42,35] cannot find symbol
+[ERROR]   symbol:   class ClientException
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[46,35] cannot find symbol
+[ERROR]   symbol:   class ClientException
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[50,35] cannot find symbol
+[ERROR]   symbol:   class ClientException
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[54,35] cannot find symbol
+[ERROR]   symbol:   class ClientException
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[58,17] cannot find symbol
+[ERROR]   symbol:   class Driver
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[60,22] cannot find symbol
+[ERROR]   symbol:   class Session
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java:[67,25] cannot find symbol
+[ERROR]   symbol:   class StatementResult
+[ERROR]   location: class org.sunbird.graph.service.operation.Neo4JBoltSearchOperations
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[41,29] incompatible types: java.lang.Object cannot be converted to long
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[111,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_INVALID_RELATION
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[115,29] reference to Relation is ambiguous
+[ERROR]   both constructor Relation(java.lang.String,org.apache.tinkerpop.gremlin.structure.Edge) in org.sunbird.graph.dac.model.Relation and constructor Relation(java.lang.String,Relationship) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java:[135,20] incompatible types: java.lang.Object cannot be converted to long
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[105,54] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String)
+[ERROR]   location: variable startNode of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[106,50] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String)
+[ERROR]   location: variable endNode of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[107,38] reference to getName is ambiguous
+[ERROR]   both method getName(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getName(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[108,36] reference to getName is ambiguous
+[ERROR]   both method getName(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getName(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[111,44] reference to getObjectType is ambiguous
+[ERROR]   both method getObjectType(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getObjectType(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[112,42] reference to getObjectType is ambiguous
+[ERROR]   both method getObjectType(org.sunbird.graph.dac.model.Node) in org.sunbird.graph.dac.model.Relation and method getObjectType(Node) in org.sunbird.graph.dac.model.Relation match
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[133,42] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[133,86] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[135,42] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[135,84] package org.neo4j.driver.v1.types does not exist
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[152,33] cannot find symbol
+[ERROR]   symbol:   class Value
+[ERROR]   location: class org.sunbird.graph.dac.model.Relation
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[176,44] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String,<nulltype>)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[178,45] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String,<nulltype>)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[180,61] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String,<nulltype>)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[182,69] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String,<nulltype>)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[206,37] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String,<nulltype>)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[210,37] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String,<nulltype>)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[220,53] cannot find symbol
+[ERROR]   symbol:   method getPropertyKeys()
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[223,63] cannot find symbol
+[ERROR]   symbol:   method getProperty(java.lang.String)
+[ERROR]   location: variable node of type org.sunbird.graph.dac.model.Node
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java:[236,41] cannot find symbol
+[ERROR]   symbol:   class Value
+[ERROR]   location: class org.sunbird.graph.dac.model.Relation
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[36,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_ADD_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[41,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_ADD_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[72,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_UPDATE_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[77,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_UPDATE_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[103,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_UPDATE_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[126,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_DELETE_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[140,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_UPDATE_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[154,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_UPDATE_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java:[167,57] cannot find symbol
+[ERROR]   symbol:   variable ERR_GRAPH_GET_NODE
+[ERROR]   location: class org.sunbird.graph.dac.enums.GraphDACErrorCodes
+[ERROR] -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoFailureException
+[ERROR] 
+[ERROR] After correcting the problems, you can resume the build with the command
+[ERROR]   mvn <args> -rf :graph-dac-api

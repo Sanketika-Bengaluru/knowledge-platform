@@ -1,0 +1,1110 @@
+2026.01.09 12:44:56 INFO  Started: Metals version 1.6.4 in folders '/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform' for client Visual Studio Code 1.107.1.
+2026.01.09 12:44:56 WARN  Using H2 2.4.240 which is newer than the version Flyway has been verified with. The latest verified version of H2 is 2.3.232.
+2026.01.09 12:46:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 12:46:04 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java]
+2026.01.09 12:46:04 INFO  empty definition using pc, found symbol in pc: _empty_/AuthTokens#none# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-04-657.md")
+2026.01.09 12:46:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:08 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java]
+2026.01.09 12:46:08 INFO  empty definition using pc, found symbol in pc: GraphDACParams/MATCH# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-08-744.md")
+2026.01.09 12:46:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/src/main/java/org/sunbird/graph/common/enums/GraphDACParams.java. Using fallback presentation compiler.
+2026.01.09 12:46:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:12 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:12 INFO  empty definition using pc, found symbol in pc: GraphDACParams/MATCH# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-08-744.md")
+2026.01.09 12:46:12 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/src/main/java/org/sunbird/graph/common/enums/GraphDACParams.java. Using fallback presentation compiler.
+2026.01.09 12:46:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java. Using fallback presentation compiler.
+2026.01.09 12:46:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:22 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java]
+2026.01.09 12:46:22 INFO  empty definition using pc, found symbol in pc: SystemProperties/IL_UNIQUE_ID# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-22-719.md")
+2026.01.09 12:46:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:22 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java]
+2026.01.09 12:46:22 INFO  empty definition using pc, found symbol in pc: SystemProperties/IL_SYS_NODE_TYPE# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-23-089.md")
+2026.01.09 12:46:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:23 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java]
+2026.01.09 12:46:23 INFO  empty definition using pc, found symbol in pc: SystemProperties/IL_FUNC_OBJECT_TYPE# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-23-542.md")
+2026.01.09 12:46:25 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:25 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java]
+2026.01.09 12:46:25 INFO  empty definition using pc, found symbol in pc: SystemProperties/IL_SEQUENCE_INDEX# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-26-053.md")
+2026.01.09 12:46:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:26 INFO  empty definition using pc, found symbol in pc: SystemProperties/IL_SEQUENCE_INDEX# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-26-053.md")
+2026.01.09 12:46:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:29 INFO  empty definition using pc, found symbol in pc: SystemProperties/IL_UNIQUE_ID# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-22-719.md")
+2026.01.09 12:46:29 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java]
+2026.01.09 12:46:29 INFO  empty definition using pc, found symbol in pc: GraphDACParams/CREATE# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-29-866.md")
+2026.01.09 12:46:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/src/main/java/org/sunbird/graph/common/enums/GraphDACParams.java. Using fallback presentation compiler.
+2026.01.09 12:46:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:30 INFO  empty definition using pc, found symbol in pc: GraphDACParams/CREATE# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-29-866.md")
+2026.01.09 12:46:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-common/src/main/java/org/sunbird/graph/common/enums/GraphDACParams.java. Using fallback presentation compiler.
+2026.01.09 12:46:32 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java. Using fallback presentation compiler.
+2026.01.09 12:46:32 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java]
+2026.01.09 12:46:32 INFO  empty definition using pc, found symbol in pc: java/util/concurrent/CompletionStage# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-32-970.md")
+2026.01.09 12:46:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java. Using fallback presentation compiler.
+2026.01.09 12:46:33 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java]
+2026.01.09 12:46:33 INFO  empty definition using pc, found symbol in pc: scala/concurrent/Future# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-33-494.md")
+2026.01.09 12:46:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java. Using fallback presentation compiler.
+2026.01.09 12:46:33 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java]
+2026.01.09 12:46:33 INFO  empty definition using pc, found symbol in pc: scala/compat/java8/FutureConverters# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_12-46-34-105.md")
+2026.01.09 12:46:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:38 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:46:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java. Using fallback presentation compiler.
+2026.01.09 12:46:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 12:46:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 12:47:06 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/main/java/org/sunbird/common/Slug.java. Using fallback presentation compiler.
+2026.01.09 12:47:06 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/platform-core/platform-common/src/main/java/org/sunbird/common/Slug.java. Using fallback presentation compiler.
+2026.01.09 12:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java. Using fallback presentation compiler.
+2026.01.09 12:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/NodeQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:48:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java. Using fallback presentation compiler.
+2026.01.09 12:48:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java. Using fallback presentation compiler.
+2026.01.09 12:48:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 12:48:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 12:48:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 12:48:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/SearchCriteria.java. Using fallback presentation compiler.
+2026.01.09 12:48:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 12:48:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/RelationTypes.java. Using fallback presentation compiler.
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+Jan 09, 2026 1:00:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 85
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:16 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:17 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:35 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:36 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:00:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:36 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:36 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:01:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+Jan 09, 2026 1:01:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 173
+2026.01.09 13:01:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:16 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:35 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:35 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:02:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:03:43 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java
+2026.01.09 13:03:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:03:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:03:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:03:44 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:05:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:05:18 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java
+2026.01.09 13:05:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:05:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 13:05:21 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java
+2026.01.09 13:05:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:05:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:05:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:05:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:05:28 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:05:44 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:07:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:09:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 13:09:08 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java
+2026.01.09 13:09:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:10:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 13:10:02 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 13:10:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:10:19 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 13:10:19 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 13:10:19 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:10:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 13:10:37 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 13:10:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:11:28 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 13:13:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 13:13:11 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java
+2026.01.09 13:13:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:17:17 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:17:17 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+Jan 09, 2026 1:17:17 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 273
+2026.01.09 13:17:17 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:23:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 13:23:37 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java
+2026.01.09 13:23:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:24:13 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 13:24:13 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java
+2026.01.09 13:24:13 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:25:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java. Using fallback presentation compiler.
+2026.01.09 13:25:02 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java
+2026.01.09 13:25:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 13:25:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/NodeQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 13:25:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 13:25:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 13:26:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 13:26:05 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 13:26:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:33 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java
+2026.01.09 14:47:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+Jan 09, 2026 2:47:34 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 302
+2026.01.09 14:47:35 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 14:47:42 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java
+2026.01.09 14:47:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:52 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:52 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:52 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 14:47:55 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java
+2026.01.09 14:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 14:47:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 14:47:56 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java
+2026.01.09 14:47:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:57 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:57 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:47:59 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:48:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:48:10 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 14:48:10 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java
+2026.01.09 14:48:10 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:48:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/Neo4jNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 14:48:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/RelationTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:19 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/RelationTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:20 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/RelationTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:20 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 14:48:20 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 14:49:25 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 14:49:25 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 15:02:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/SystemNodeTypes.java. Using fallback presentation compiler.
+2026.01.09 15:02:43 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala
+2026.01.09 15:02:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:02:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:02:44 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:02:51 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:02:51 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:03:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:03:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:03:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:03:43 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala
+2026.01.09 15:03:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:04:03 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jan 09, 2026 3:04:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22vscode-chat-session%3A%2F%2Flocal%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22path%22%3A%22%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22scheme%22%3A%22vscode-chat-session%22%2C%22authority%22%3A%22local%22%7D%2C%22requestId%22%3A%22request_b31542d8-4beb-425c-b797-9cf5097d341f%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 15:05:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:04 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala
+2026.01.09 15:05:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/content-api/content-actors/src/test/scala/org/sunbird/content/actors/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:27 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala
+2026.01.09 15:05:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:05:27 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala
+2026.01.09 15:05:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 15:07:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:07:39 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 15:07:43 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 15:07:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:07:43 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+Jan 09, 2026 3:07:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22vscode-chat-session%3A%2F%2Flocal%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22path%22%3A%22%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22scheme%22%3A%22vscode-chat-session%22%2C%22authority%22%3A%22local%22%7D%2C%22requestId%22%3A%22request_76a31272-a957-4d22-9e3e-f2b93e2a063b%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 15:08:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java. Using fallback presentation compiler.
+2026.01.09 15:08:29 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java
+Jan 09, 2026 3:11:16 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22vscode-chat-session%3A%2F%2Flocal%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22path%22%3A%22%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22scheme%22%3A%22vscode-chat-session%22%2C%22authority%22%3A%22local%22%7D%2C%22requestId%22%3A%22request_76a31272-a957-4d22-9e3e-f2b93e2a063b%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 15:11:21 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 15:11:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:29 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:41 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 15:11:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:11:41 WARN  Running javac-semanticdb failed for file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Output:
+
+2026.01.09 15:11:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:13:57 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:13:57 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:15:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:15:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:33 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java]
+2026.01.09 15:16:33 INFO  empty definition using pc, found symbol in pc: org/neo4j/driver/v1/Value# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_15-16-33-452.md")
+2026.01.09 15:16:33 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java]
+2026.01.09 15:16:33 INFO  empty definition using pc, found symbol in pc: org/neo4j/graphdb/Node# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_15-16-33-457.md")
+2026.01.09 15:16:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 15:16:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:33 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java]
+2026.01.09 15:16:33 INFO  empty definition using pc, found symbol in pc: org/neo4j/graphdb/Relationship# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_15-16-33-584.md")
+2026.01.09 15:16:47 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:16:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:07 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:07 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 15:18:07 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:07 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:08 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:22 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 15:18:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:22 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:18:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:20:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java. Using fallback presentation compiler.
+2026.01.09 15:20:41 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java
+2026.01.09 15:20:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 15:20:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:18:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:18:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:18:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 16:18:05 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java
+2026.01.09 16:18:05 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java
+2026.01.09 16:18:05 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java
+2026.01.09 16:18:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:18:05 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java]
+2026.01.09 16:18:05 INFO  QDox parse error in file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_qdox-error_16-18-05-495.md")
+2026.01.09 16:18:05 WARN  Running javac-semanticdb failed for file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Output:
+
+2026.01.09 16:18:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:20:33 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/SearchCriteria.java. Using fallback presentation compiler.
+2026.01.09 16:21:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java. Using fallback presentation compiler.
+2026.01.09 16:21:54 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java
+2026.01.09 16:21:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:21:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+Jan 09, 2026 4:22:18 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22vscode-chat-session%3A%2F%2Flocal%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22path%22%3A%22%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22scheme%22%3A%22vscode-chat-session%22%2C%22authority%22%3A%22local%22%7D%2C%22requestId%22%3A%22request_8a2188da-7013-44f6-ac65-c849f600a0fa%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 16:22:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 16:22:24 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java
+Jan 09, 2026 4:22:27 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22vscode-chat-session%3A%2F%2Flocal%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22path%22%3A%22%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22scheme%22%3A%22vscode-chat-session%22%2C%22authority%22%3A%22local%22%7D%2C%22requestId%22%3A%22request_8a2188da-7013-44f6-ac65-c849f600a0fa%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 16:23:09 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:09 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java
+2026.01.09 16:23:09 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:19 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:19 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java]
+2026.01.09 16:23:19 INFO  empty definition using pc, found symbol in pc: java/util/stream/Stream#toList(). (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-19-252.md")
+2026.01.09 16:23:19 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:19 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java]
+2026.01.09 16:23:19 INFO  empty definition using pc, found symbol in pc: _empty_/GraphTraversalSource#V#has#bothE#toList# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-19-426.md")
+2026.01.09 16:23:19 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:28 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:28 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:23:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:23:39 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:23:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:23:50 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java]
+2026.01.09 16:23:50 INFO  empty definition using pc, found symbol in pc: org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-50-170.md")
+2026.01.09 16:23:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:23:50 INFO  empty definition using pc, found symbol in pc: org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-50-170.md")
+2026.01.09 16:24:00 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java. Using fallback presentation compiler.
+2026.01.09 16:24:00 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:24:00 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java
+2026.01.09 16:24:00 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java
+2026.01.09 16:24:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/MetadataCriterion.java. Using fallback presentation compiler.
+2026.01.09 16:24:53 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Filter.java. Using fallback presentation compiler.
+2026.01.09 16:24:59 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/SearchConditions.java. Using fallback presentation compiler.
+Jan 09, 2026 4:25:13 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+Jan 09, 2026 4:25:15 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "chat-editing-snapshot-text-model:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchOperations.java?%7B%22session%22%3A%7B%22%24mid%22%3A1%2C%22external%22%3A%22vscode-chat-session%3A%2F%2Flocal%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22path%22%3A%22%2FOTY0ZTk0ZjktYzA0My00ZGRkLWFmYmYtZTIxYzU2N2IyNjZj%22%2C%22scheme%22%3A%22vscode-chat-session%22%2C%22authority%22%3A%22local%22%7D%2C%22requestId%22%3A%22request_8a2188da-7013-44f6-ac65-c849f600a0fa%22%2C%22undoStop%22%3A%22__epoch_9007199254740991%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "chat-editing-snapshot-text-model" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 16:25:17 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:25:17 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:26:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 16:26:54 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java
+2026.01.09 16:27:13 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:13 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:13 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java]
+2026.01.09 16:27:13 INFO  empty definition using pc, found symbol in pc: _empty_/`<any>`#toList# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-27-13-968.md")
+2026.01.09 16:27:13 INFO  Created report: Optional[file:///Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java]
+2026.01.09 16:27:13 INFO  empty definition using pc, found symbol in pc: java/util/stream/Stream#collect(+1). (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-27-13-981.md")
+2026.01.09 16:27:13 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:13 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:13 INFO  empty definition using pc, found symbol in pc: org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-50-170.md")
+2026.01.09 16:27:13 INFO  empty definition using pc, found symbol in pc: org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-50-170.md")
+2026.01.09 16:27:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:15 INFO  empty definition using pc, found symbol in pc: org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-50-170.md")
+2026.01.09 16:27:15 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:15 INFO  empty definition using pc, found symbol in pc: org/apache/tinkerpop/gremlin/process/traversal/dsl/graph/GraphTraversal# (full report at: "/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/.metals/.reports/metals-full/2026-01-09/r_empty-definition_16-23-50-170.md")
+2026.01.09 16:27:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:37 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java
+2026.01.09 16:27:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:37 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:27:46 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java
+2026.01.09 16:27:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:27:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:27:46 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:27:51 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:27:59 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java
+2026.01.09 16:27:59 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:27:59 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:26 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 16:29:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:29:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:29:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:29:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:29:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:29:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:29:40 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java
+2026.01.09 16:29:40 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:40 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:41 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:40 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:40 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:44 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:44 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:49 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:29:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:29:54 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java
+2026.01.09 16:29:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:29:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:30:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:31:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:33:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:33:17 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:33:38 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:33:38 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:33:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:33:39 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 16:33:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:33:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:33:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:33:40 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 16:33:40 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 16:33:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 16:33:42 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 16:33:49 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 16:33:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Node.java. Using fallback presentation compiler.
+2026.01.09 16:33:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/RelationCriterion.java. Using fallback presentation compiler.
+2026.01.09 16:33:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/RelationCriterion.java. Using fallback presentation compiler.
+2026.01.09 16:33:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/RelationCriterion.java. Using fallback presentation compiler.
+2026.01.09 16:33:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/RelationFilter.java. Using fallback presentation compiler.
+2026.01.09 16:33:54 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/RelationFilter.java. Using fallback presentation compiler.
+2026.01.09 16:33:56 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java
+2026.01.09 16:33:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:33:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:33:58 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/RelationFilter.java. Using fallback presentation compiler.
+2026.01.09 16:34:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:06 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:06 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:12 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java
+2026.01.09 16:34:12 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:12 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:12 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:16 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:25 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:34:26 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:35:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/BaseQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:35:11 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala
+2026.01.09 16:35:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 16:35:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 16:35:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-core_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 16:35:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java. Using fallback presentation compiler.
+2026.01.09 16:35:18 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java
+2026.01.09 16:35:18 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/enums/GraphDACErrorCodes.java. Using fallback presentation compiler.
+2026.01.09 16:35:24 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java
+2026.01.09 16:35:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:35:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:35:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:35:24 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/model/Relation.java. Using fallback presentation compiler.
+2026.01.09 16:36:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:36:02 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java
+2026.01.09 16:36:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:36:02 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:36:12 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/GremlinOperationsUtil.java. Using fallback presentation compiler.
+2026.01.09 16:36:21 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java
+2026.01.09 16:36:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:21 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:31 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:35 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:35 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/JanusGraphSchemaManager.java. Using fallback presentation compiler.
+2026.01.09 16:36:50 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:36:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:36:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:36:50 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:36:51 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java
+2026.01.09 16:36:51 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:36:51 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:36:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/dac/util/TinkerpopNodeUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:05 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:37:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:10 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:11 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:14 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:14 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java
+2026.01.09 16:37:14 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:14 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:23 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:27 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:31 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:31 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java
+2026.01.09 16:37:31 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:34 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/RelationOperations.java. Using fallback presentation compiler.
+2026.01.09 16:37:39 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+Jan 09, 2026 4:37:39 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleCancellation
+WARNING: Unmatched cancel notification for request id 1012
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:39 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/JanusGraphDriverUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:55 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java
+2026.01.09 16:37:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:55 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:58 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:37:58 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:38:00 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java. Using fallback presentation compiler.
+2026.01.09 16:38:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 16:38:04 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java
+2026.01.09 16:38:05 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 16:38:04 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/test/BaseTest.java. Using fallback presentation compiler.
+2026.01.09 16:38:14 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 16:38:14 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala
+2026.01.09 16:38:14 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+2026.01.09 16:38:14 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-engine_2.13/src/test/scala/org/sunbird/graph/BaseSpec.scala. Using presentation compiler with project's scala-library version: 3.3.6
+Jan 09, 2026 4:38:21 PM org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint notify
+INFO: Unsupported notification method: $/setTrace
+2026.01.09 16:38:30 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:38:30 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:38:30 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+Jan 09, 2026 4:38:31 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FGraphAsyncOperations.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+2026.01.09 16:38:49 WARN  no build target for: /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java
+2026.01.09 16:38:49 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:38:49 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:38:49 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:38:49 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+2026.01.09 16:38:56 INFO  no build target found for /Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/AsyncNodeOperations.java. Using fallback presentation compiler.
+Jan 09, 2026 4:39:01 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/GraphAsyncOperations.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FGraphAsyncOperations.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:39:13 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltGraphOperations.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FNeo4JBoltGraphOperations.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:39:42 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/Neo4JBoltSearchOperations.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FNeo4JBoltSearchOperations.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:39:46 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/NodeAsyncOperations.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FNodeAsyncOperations.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:39:47 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/operation/SearchAsyncOperations.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FSearchAsyncOperations.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:39:49 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/DriverUtil.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Futil%2FDriverUtil.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:39:58 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/GraphQueryGenerationUtil.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Futil%2FGraphQueryGenerationUtil.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:40:05 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/NodeQueryGenerationUtil.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Futil%2FNodeQueryGenerationUtil.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:40:07 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/main/java/org/sunbird/graph/service/util/SearchQueryGenerationUtil.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Fmain%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Futil%2FSearchQueryGenerationUtil.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:40:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/graph/service/operation/NodeAsyncOperationsExceptionTest.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Ftest%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FNodeAsyncOperationsExceptionTest.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+
+Jan 09, 2026 4:40:08 PM org.eclipse.lsp4j.jsonrpc.RemoteEndpoint handleNotification
+WARNING: Notification threw an exception: {
+  "jsonrpc": "2.0",
+  "method": "metals/didFocusTextDocument",
+  "params": [
+    "git:/Users/sanketikam4/knowledge-platform-janusgraph/knowledge-platform/ontology-engine/graph-dac-api/src/test/java/org/sunbird/graph/service/operation/NodeAsyncOperationsTest.java?%7B%22path%22%3A%22%2FUsers%2Fsanketikam4%2Fknowledge-platform-janusgraph%2Fknowledge-platform%2Fontology-engine%2Fgraph-dac-api%2Fsrc%2Ftest%2Fjava%2Forg%2Fsunbird%2Fgraph%2Fservice%2Foperation%2FNodeAsyncOperationsTest.java%22%2C%22ref%22%3A%22HEAD%22%7D"
+  ]
+}
+java.nio.file.FileSystemNotFoundException: Provider "git" not installed
+	at java.base/java.nio.file.Path.of(Path.java:212)
+	at java.base/java.nio.file.Paths.get(Paths.java:98)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionURIMtags.toAbsolutePath(MtagsEnrichments.scala:149)
+	at scala.meta.internal.mtags.MtagsEnrichments$XtensionStringMtags.toAbsolutePath(MtagsEnrichments.scala:209)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:778)
+	at scala.meta.internal.metals.MetalsEnrichments$XtensionString.toAbsolutePath(MetalsEnrichments.scala:775)
+	at scala.meta.internal.metals.WorkspaceLspService.didFocus(WorkspaceLspService.scala:789)
+	at scala.meta.metals.lsp.DelegatingScalaService.didFocus(DelegatingScalaService.scala:42)
+	at jdk.internal.reflect.GeneratedMethodAccessor14.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.lambda$recursiveFindRpcMethods$0(GenericEndpoint.java:65)
+	at org.eclipse.lsp4j.jsonrpc.services.GenericEndpoint.notify(GenericEndpoint.java:160)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.handleNotification(RemoteEndpoint.java:231)
+	at org.eclipse.lsp4j.jsonrpc.RemoteEndpoint.consume(RemoteEndpoint.java:198)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.handleMessage(StreamMessageProducer.java:185)
+	at org.eclipse.lsp4j.jsonrpc.json.StreamMessageProducer.listen(StreamMessageProducer.java:97)
+	at org.eclipse.lsp4j.jsonrpc.json.ConcurrentMessageProcessor.run(ConcurrentMessageProcessor.java:114)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:539)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:840)
+

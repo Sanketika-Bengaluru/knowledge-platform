@@ -3,16 +3,17 @@ package org.sunbird.graph.dac.model;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import org.apache.commons.collections4.MapUtils;
 import org.apache.commons.lang3.StringUtils;
-import org.neo4j.driver.v1.Value;
-import org.neo4j.graphdb.Node;
-import org.neo4j.graphdb.Relationship;
+import org.apache.tinkerpop.gremlin.structure.Edge;
+import org.apache.tinkerpop.gremlin.structure.Property;
+import org.apache.tinkerpop.gremlin.structure.Vertex;
+import org.apache.tinkerpop.gremlin.structure.VertexProperty;
 import org.sunbird.common.exception.ServerException;
 import org.sunbird.graph.common.enums.SystemProperties;
 import org.sunbird.graph.dac.enums.GraphDACErrorCodes;
 
 import java.io.Serializable;
 import java.util.HashMap;
-import java.util.List;
+import java.util.Iterator;
 import java.util.Map;
 
 public class Relation implements Serializable {
@@ -43,165 +44,73 @@ public class Relation implements Serializable {
 		this.relationType = relationType;
 	}
 
-	public Relation(String graphId, Relationship neo4jRel) {
-		if (null == neo4jRel)
+	// Tinkerpop Edge constructor for JanusGraph
+	public Relation(String graphId, Edge edge) {
+		if (null == edge)
 			throw new ServerException(GraphDACErrorCodes.ERR_GRAPH_NULL_DB_REL.name(),
 					"Failed to create relation object. Relation from database is null.");
 		this.graphId = graphId;
 
-		Node startNode = neo4jRel.getStartNode();
-		Node endNode = neo4jRel.getEndNode();
-		this.startNodeId = (String) startNode.getProperty(SystemProperties.IL_UNIQUE_ID.name());
-		this.endNodeId = (String) endNode.getProperty(SystemProperties.IL_UNIQUE_ID.name());
-		this.startNodeName = getName(startNode);
-		this.endNodeName = getName(endNode);
-		this.startNodeType = getNodeType(startNode);
-		this.endNodeType = getNodeType(endNode);
-		this.startNodeObjectType = getObjectType(startNode);
-		this.endNodeObjectType = getObjectType(endNode);
-		this.relationType = neo4jRel.getType().name();
+		// Get start and end vertices
+		Vertex startVertex = edge.outVertex();
+		Vertex endVertex = edge.inVertex();
+
+		// Extract IDs and names
+		this.startNodeId = getVertexProperty(startVertex, SystemProperties.IL_UNIQUE_ID.name());
+		this.endNodeId = getVertexProperty(endVertex, SystemProperties.IL_UNIQUE_ID.name());
+		this.startNodeName = getVertexName(startVertex);
+		this.endNodeName = getVertexName(endVertex);
+		this.startNodeType = getVertexProperty(startVertex, SystemProperties.IL_SYS_NODE_TYPE.name());
+		this.endNodeType = getVertexProperty(endVertex, SystemProperties.IL_SYS_NODE_TYPE.name());
+		this.startNodeObjectType = getVertexProperty(startVertex, SystemProperties.IL_FUNC_OBJECT_TYPE.name());
+		this.endNodeObjectType = getVertexProperty(endVertex, SystemProperties.IL_FUNC_OBJECT_TYPE.name());
+		this.relationType = edge.label();
+
+		// Extract metadata from edge properties
 		this.metadata = new HashMap<String, Object>();
-		this.startNodeMetadata = getNodeMetadata(neo4jRel.getStartNode());
-		this.endNodeMetadata = getNodeMetadata(neo4jRel.getEndNode());
-		Iterable<String> keys = neo4jRel.getPropertyKeys();
-		if (null != keys && null != keys.iterator()) {
-			for (String key : keys) {
-				this.metadata.put(key, neo4jRel.getProperty(key));
-			}
+		Iterator<Property<Object>> properties = edge.properties();
+		while (properties.hasNext()) {
+			Property<Object> property = properties.next();
+			this.metadata.put(property.key(), property.value());
 		}
+
+		// Extract node metadata
+		this.startNodeMetadata = getVertexMetadata(startVertex);
+		this.endNodeMetadata = getVertexMetadata(endVertex);
 	}
 
-	public Relation(String graphId, org.neo4j.driver.v1.types.Relationship relationship, Map<Long, Object> startNodeMap,
-			Map<Long, Object> endNodeMap) {
-		if (null == relationship)
-			throw new ServerException(GraphDACErrorCodes.ERR_GRAPH_NULL_DB_REL.name(),
-					"Failed to create relation object. Relation from database is null.");
-		this.id = relationship.id();
-		this.graphId = graphId;
+	// Helper methods for Tinkerpop Vertex
 
-		org.neo4j.driver.v1.types.Node startNode = (org.neo4j.driver.v1.types.Node) startNodeMap
-				.get(relationship.startNodeId());
-		org.neo4j.driver.v1.types.Node endNode = (org.neo4j.driver.v1.types.Node) endNodeMap
-				.get(relationship.endNodeId());
-		this.startNodeId = startNode.get(SystemProperties.IL_UNIQUE_ID.name()).asString();
-		this.endNodeId = endNode.get(SystemProperties.IL_UNIQUE_ID.name()).asString();
-		this.startNodeName = getName(startNode);
-		this.endNodeName = getName(endNode);
-		this.startNodeType = getNodeType(startNode);
-		this.endNodeType = getNodeType(endNode);
-		this.startNodeObjectType = getObjectType(startNode);
-		this.endNodeObjectType = getObjectType(endNode);
-		this.relationType = relationship.type();
-		this.metadata = new HashMap<String, Object>();
-		this.startNodeMetadata = getNodeMetadata(startNode);
-		this.endNodeMetadata = getNodeMetadata(endNode);
-		Iterable<String> keys = relationship.keys();
-		if (null != keys && null != keys.iterator()) {
-			for (String key : keys) {
-				Value value = relationship.get(key);
-				if (null != value) {
-					if (StringUtils.startsWithIgnoreCase(value.type().name(), "LIST")) {
-						List<Object> list = value.asList();
-						if (null != list && list.size() > 0) {
-							Object obj = list.get(0);
-							if (obj instanceof String) {
-								this.metadata.put(key, list.toArray(new String[0]));
-							} else if (obj instanceof Number) {
-								this.metadata.put(key, list.toArray(new Number[0]));
-							} else if (obj instanceof Boolean) {
-								this.metadata.put(key, list.toArray(new Boolean[0]));
-							} else {
-								this.metadata.put(key, list.toArray(new Object[0]));
-							}
-						}
-					} else
-						this.metadata.put(key, value.asObject());
-				}
-			}
+	private String getVertexProperty(Vertex vertex, String propertyKey) {
+		if (vertex == null) return null;
+		Iterator<VertexProperty<Object>> props = vertex.properties(propertyKey);
+		if (props.hasNext()) {
+			Object value = props.next().value();
+			return value != null ? value.toString() : null;
 		}
+		return null;
 	}
 
-	private String getName(Node node) {
-		String name = (String) node.getProperty("name", null);
+	private String getVertexName(Vertex vertex) {
+		String name = getVertexProperty(vertex, "name");
 		if (StringUtils.isBlank(name)) {
-			name = (String) node.getProperty("title", null);
-				if (StringUtils.isBlank(name)) {
-					name = (String) node.getProperty(SystemProperties.IL_FUNC_OBJECT_TYPE.name(), null);
-					if (StringUtils.isBlank(name))
-						name = (String) node.getProperty(SystemProperties.IL_SYS_NODE_TYPE.name(), null);
-			    }
-		}
-		return name;
-	}
-
-	private String getName(org.neo4j.driver.v1.types.Node node) {
-		String name = node.get("name").asString();
-		if (StringUtils.isBlank(name) || StringUtils.equalsIgnoreCase("null", name)) {
-			name = node.get("title").asString();
-				if (StringUtils.isBlank(name) || StringUtils.equalsIgnoreCase("null", name)) {
-					name = node.get(SystemProperties.IL_FUNC_OBJECT_TYPE.name()).asString();
-					if (StringUtils.isBlank(name) || StringUtils.equalsIgnoreCase("null", name))
-						name = node.get(SystemProperties.IL_SYS_NODE_TYPE.name()).asString();
-				}
-		}
-		return name;
-	}
-
-	private String getNodeType(org.neo4j.driver.v1.types.Node node) {
-		return node.get(SystemProperties.IL_SYS_NODE_TYPE.name()).asString();
-	}
-
-	private String getNodeType(Node node) {
-		return (String) node.getProperty(SystemProperties.IL_SYS_NODE_TYPE.name(), null);
-	}
-
-	private String getObjectType(Node node) {
-		return (String) node.getProperty(SystemProperties.IL_FUNC_OBJECT_TYPE.name(), null);
-	}
-
-	private String getObjectType(org.neo4j.driver.v1.types.Node node) {
-		return node.get(SystemProperties.IL_FUNC_OBJECT_TYPE.name()).asString();
-	}
-
-	private Map<String, Object> getNodeMetadata(Node node) {
-		Map<String, Object> metadata = new HashMap<String, Object>();
-		if (null != node) {
-			Iterable<String> keys = node.getPropertyKeys();
-			if (null != keys) {
-				for (String key : keys) {
-					metadata.put(key, node.getProperty(key));
-				}
+			name = getVertexProperty(vertex, "title");
+			if (StringUtils.isBlank(name)) {
+				name = getVertexProperty(vertex, SystemProperties.IL_FUNC_OBJECT_TYPE.name());
+				if (StringUtils.isBlank(name))
+					name = getVertexProperty(vertex, SystemProperties.IL_SYS_NODE_TYPE.name());
 			}
 		}
-		return metadata;
+		return name;
 	}
 
-	private Map<String, Object> getNodeMetadata(org.neo4j.driver.v1.types.Node node) {
-		Map<String, Object> metadata = new HashMap<String, Object>();
-		if (null != node) {
-			Iterable<String> keys = node.keys();
-			if (null != keys) {
-				for (String key : keys) {
-					Value value = node.get(key);
-					if (null != value) {
-						if (StringUtils.startsWithIgnoreCase(value.type().name(), "LIST")) {
-							List<Object> list = value.asList();
-							if (null != list && list.size() > 0) {
-								Object obj = list.get(0);
-								if (obj instanceof String) {
-									metadata.put(key, list.toArray(new String[0]));
-								} else if (obj instanceof Number) {
-									metadata.put(key, list.toArray(new Number[0]));
-								} else if (obj instanceof Boolean) {
-									metadata.put(key, list.toArray(new Boolean[0]));
-								} else {
-									metadata.put(key, list.toArray(new Object[0]));
-								}
-							}
-						} else
-							metadata.put(key, value.asObject());
-					}
-				}
+	private Map<String, Object> getVertexMetadata(Vertex vertex) {
+		Map<String, Object> metadata = new HashMap<>();
+		if (vertex != null) {
+			Iterator<VertexProperty<Object>> properties = vertex.properties();
+			while (properties.hasNext()) {
+				VertexProperty<Object> property = properties.next();
+				metadata.put(property.key(), property.value());
 			}
 		}
 		return metadata;

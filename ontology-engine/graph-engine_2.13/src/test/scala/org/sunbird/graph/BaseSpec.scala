@@ -6,15 +6,15 @@ import com.typesafe.config.ConfigFactory
 import org.apache.commons.io.FileUtils
 import org.cassandraunit.utils.EmbeddedCassandraServerHelper
 import org.mockito.Mockito._
-import org.neo4j.driver.v1._
-import org.neo4j.graphdb.GraphDatabaseService
+import org.janusgraph.core.JanusGraph
+import org.janusgraph.core.JanusGraphFactory
+import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource
 import org.scalatest.{AsyncFlatSpec, BeforeAndAfterAll, Matchers}
 import org.sunbird.cassandra.CassandraConnector
 import org.sunbird.common.Platform
 import org.sunbird.graph.dac.model.Node
+import org.sunbird.graph.dac.util.JanusGraphSchemaManager
 import org.sunbird.graph.schema.FrameworkMasterCategoryMap
-import org.testcontainers.containers.FixedHostPortGenericContainer
-import org.testcontainers.containers.wait.strategy.Wait
 
 import java.io.File
 import java.time.Duration
@@ -22,10 +22,11 @@ import java.util.concurrent.TimeUnit
 
 class BaseSpec extends AsyncFlatSpec with Matchers with BeforeAndAfterAll {
 
-  var driver: Driver = null
-  var graphDb: Session = _
+  var embeddedGraph: JanusGraph = _
+  var g: GraphTraversalSource = _
   var session: com.datastax.driver.core.Session = null
   implicit val oec: OntologyEngineContext = new OntologyEngineContext
+  val testGraphId = "domain"
 
   private val script_1 = "CREATE KEYSPACE IF NOT EXISTS content_store WITH replication = {'class': 'SimpleStrategy','replication_factor': '1'};"
   private val script_2 = "CREATE TABLE IF NOT EXISTS content_store.content_data (content_id text, last_updated_on timestamp,body blob,oldBody blob,screenshots blob,stageIcons blob,externallink text,PRIMARY KEY (content_id));"
@@ -42,39 +43,16 @@ class BaseSpec extends AsyncFlatSpec with Matchers with BeforeAndAfterAll {
   private val script_13 = "INSERT INTO category_store.category_definition_data (identifier, objectmetadata) VALUES ('obj-cat:practice-question_question_all', {'config': '{}', 'schema': '{}'});"
   private val configFile = ConfigFactory.load()
   private val graphDirectory = configFile.getString("graph.dir")
-  val hostHttpsPort = 7473
-  val hostHttpPort = 7474
-  val hostBoltPort = 7687
-  val neo4jContainer: FixedHostPortGenericContainer[_] = new FixedHostPortGenericContainer("neo4j:3.5.0")
 
-  def setUpEmbeddedNeo4j(): Unit = {
-    if (null == graphDb) {
-      val graphDir = new File(graphDirectory)
-      if (!graphDir.exists()) {
-        graphDir.mkdirs()
-      }
-
-      neo4jContainer.withFixedExposedPort(hostHttpsPort, hostHttpsPort)
-      neo4jContainer.withFixedExposedPort(hostHttpPort, hostHttpPort)
-      neo4jContainer.withFixedExposedPort(hostBoltPort, hostBoltPort)
-      neo4jContainer.withEnv("NEO4J_dbms_directories_data", graphDirectory)
-      neo4jContainer.withEnv("NEO4J_dbms_security_auth__enabled", "false")
-      neo4jContainer.withCommand("neo4j", "console")
-      neo4jContainer.withStartupTimeout(Duration.ofSeconds(60))
-      neo4jContainer.waitingFor(Wait.forListeningPort())
-      neo4jContainer.start()
-      Thread.sleep(20000)
-
-      val httpAddress = s"http://localhost:$hostHttpPort"
-      val boltAddress = s"bolt://localhost:$hostBoltPort"
-
-      val config = Config.builder()
-        .withConnectionTimeout(30, TimeUnit.SECONDS)
-        .withMaxTransactionRetryTime(1, TimeUnit.MINUTES)
-        .build()
-
-      driver = GraphDatabase.driver(boltAddress, config)
-      graphDb = driver.session()
+  def setUpEmbeddedJanusGraph(): Unit = {
+    if (null == embeddedGraph) {
+      embeddedGraph = JanusGraphFactory.build()
+        .set("storage.backend", "inmemory")
+        .set("index.search.backend", "inmemory")
+        .open()
+      
+      JanusGraphSchemaManager.initializeGraphSchema(embeddedGraph)
+      g = embeddedGraph.traversal()
     }
   }
 
