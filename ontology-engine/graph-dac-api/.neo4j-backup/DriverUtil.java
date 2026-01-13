@@ -3,13 +3,8 @@ package org.sunbird.graph.service.util;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.tinkerpop.gremlin.driver.Cluster;
 import org.apache.tinkerpop.gremlin.driver.remote.DriverRemoteConnection;
-import org.apache.tinkerpop.gremlin.util.ser.GraphBinaryMessageSerializerV1;
 import org.apache.tinkerpop.gremlin.process.traversal.dsl.graph.GraphTraversalSource;
 import org.apache.tinkerpop.gremlin.structure.util.empty.EmptyGraph;
-import org.apache.tinkerpop.gremlin.structure.io.binary.TypeSerializerRegistry;
-import org.janusgraph.graphdb.tinkerpop.JanusGraphIoRegistry;
-import org.janusgraph.core.JanusGraph;
-import org.janusgraph.core.JanusGraphFactory;
 import org.sunbird.common.Platform;
 import org.sunbird.common.exception.ClientException;
 import org.sunbird.graph.service.common.DACConfigurationConstants;
@@ -28,10 +23,9 @@ public class DriverUtil {
 
 	private static Map<String, GraphTraversalSource> graphTraversalSourceMap = new HashMap<>();
 	private static Map<String, Cluster> clusterMap = new HashMap<>();
-	private static Map<String, JanusGraph> janusGraphMap = new HashMap<>();
 
 	public static GraphTraversalSource getGraphTraversalSource(String graphId, GraphOperation graphOperation) {
-		TelemetryManager.log("Get GraphTraversalSource for Graph Id: " + graphId);
+		TelemetryManager.log("Get GraphTraversalSource for Graph Id: "+ graphId);
 		String driverKey = graphId + DACConfigurationConstants.UNDERSCORE
 				+ StringUtils.lowerCase(graphOperation.name());
 		TelemetryManager.log("Driver Configuration Key: " + driverKey);
@@ -44,36 +38,28 @@ public class DriverUtil {
 		return g;
 	}
 
-	private static GraphTraversalSource loadGraphTraversalSource(String graphId, GraphOperation graphOperation,
-			String driverKey) {
-		TelemetryManager.log("Loading GraphTraversalSource for Graph Id: " + graphId);
+	private static GraphTraversalSource loadGraphTraversalSource(String graphId, GraphOperation graphOperation, String driverKey) {
+		TelemetryManager.log("Loading GraphTraversalSource for Graph Id: "+ graphId);
 		String route = getRoute(graphId, graphOperation);
-
-		// Configure GraphBinary serializer with JanusGraph IoRegistry to support custom
-		// types
-		GraphBinaryMessageSerializerV1 serializer = new GraphBinaryMessageSerializerV1(
-				TypeSerializerRegistry.build().addRegistry(JanusGraphIoRegistry.instance()).create());
-
+		
 		Cluster cluster = Cluster.build()
 				.addContactPoint(route.split(":")[0])
 				.port(Integer.parseInt(route.split(":")[1]))
 				.maxWaitForConnection(30000)
 				.maxConnectionPoolSize(DACConfigurationConstants.JANUSGRAPH_MAX_CONNECTION_POOL_SIZE)
 				.minConnectionPoolSize(DACConfigurationConstants.JANUSGRAPH_MIN_CONNECTION_POOL_SIZE)
-				.serializer(serializer)
 				.create();
-
+		
 		clusterMap.put(driverKey, cluster);
-
+		
 		GraphTraversalSource g = traversal().withRemote(DriverRemoteConnection.using(cluster, "g"));
-
+		
 		registerShutdownHook(g, cluster);
 		return g;
 	}
 
 	public static void closeConnections() {
-		for (Iterator<Map.Entry<String, GraphTraversalSource>> it = graphTraversalSourceMap.entrySet().iterator(); it
-				.hasNext();) {
+		for (Iterator<Map.Entry<String, GraphTraversalSource>> it = graphTraversalSourceMap.entrySet().iterator(); it.hasNext();) {
 			Map.Entry<String, GraphTraversalSource> entry = it.next();
 			GraphTraversalSource g = entry.getValue();
 			try {
@@ -83,7 +69,7 @@ public class DriverUtil {
 			}
 			it.remove();
 		}
-
+		
 		for (Iterator<Map.Entry<String, Cluster>> it = clusterMap.entrySet().iterator(); it.hasNext();) {
 			Map.Entry<String, Cluster> entry = it.next();
 			Cluster cluster = entry.getValue();
@@ -91,17 +77,6 @@ public class DriverUtil {
 				cluster.close();
 			} catch (Exception e) {
 				TelemetryManager.error("Error closing Cluster", e);
-			}
-			it.remove();
-		}
-
-		for (Iterator<Map.Entry<String, JanusGraph>> it = janusGraphMap.entrySet().iterator(); it.hasNext();) {
-			Map.Entry<String, JanusGraph> entry = it.next();
-			JanusGraph graph = entry.getValue();
-			try {
-				graph.close();
-			} catch (Exception e) {
-				TelemetryManager.error("Error closing JanusGraph", e);
 			}
 			it.remove();
 		}
@@ -131,8 +106,7 @@ public class DriverUtil {
 					DACErrorMessageConstants.INVALID_GRAPH_ID + " | [Graph Id: " + graphId + "]");
 
 		String routeUrl = "localhost:8182";
-		String baseKey = DACConfigurationConstants.DEFAULT_ROUTE_PROP_PREFIX
-				+ StringUtils.lowerCase(graphOperation.name())
+		String baseKey = DACConfigurationConstants.DEFAULT_ROUTE_PROP_PREFIX + StringUtils.lowerCase(graphOperation.name())
 				+ DACConfigurationConstants.DOT;
 		if (Platform.config.hasPath(baseKey + graphId)) {
 			routeUrl = Platform.config.getString(baseKey + graphId);
@@ -145,49 +119,4 @@ public class DriverUtil {
 		return routeUrl;
 	}
 
-	/**
-	 * Get a direct JanusGraph instance for schema management operations
-	 * This is needed for operations that require JanusGraphManagement API
-	 * 
-	 * @param graphId the graph identifier
-	 * @return JanusGraph instance
-	 */
-	public static JanusGraph getJanusGraph(String graphId) {
-		TelemetryManager.log("Get JanusGraph instance for Graph Id: " + graphId);
-
-		JanusGraph graph = janusGraphMap.get(graphId);
-		if (null == graph) {
-			graph = loadJanusGraph(graphId);
-			janusGraphMap.put(graphId, graph);
-		}
-		return graph;
-	}
-
-	private static JanusGraph loadJanusGraph(String graphId) {
-		TelemetryManager.log("Loading JanusGraph instance for Graph Id: " + graphId);
-		String route = getRoute(graphId, GraphOperation.WRITE);
-
-		// Get configuration from Platform config if available
-		String storageBackend = Platform.config.hasPath("graph.storage.backend")
-				? Platform.config.getString("graph.storage.backend")
-				: "cql";
-		String storageHostname = Platform.config.hasPath("graph.storage.hostname")
-				? Platform.config.getString("graph.storage.hostname")
-				: route.split(":")[0];
-
-		// Build configuration properties map
-		org.apache.commons.configuration2.MapConfiguration conf = new org.apache.commons.configuration2.MapConfiguration(
-				new java.util.HashMap<String, Object>() {
-					{
-						put("storage.backend", storageBackend);
-						put("storage.hostname", storageHostname);
-					}
-				});
-
-		// Create and open JanusGraph
-		JanusGraph graph = JanusGraphFactory.open(conf);
-
-		TelemetryManager.log("JanusGraph instance loaded for Graph Id: " + graphId);
-		return graph;
-	}
 }
